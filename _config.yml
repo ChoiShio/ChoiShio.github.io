@@ -110,12 +110,12 @@ author:
   location         : "Daejeon, Republic of Korea"
   email            : 
   links:
-    - label: "Email"
+    - label: "E-mail"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:cdy3773@kaist.ac.kr"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://www.sound.kaist.ac.kr/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -132,6 +132,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "E-mail"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:cdy3773@kaist.ac.kr"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.sound.kaist.ac.kr/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
