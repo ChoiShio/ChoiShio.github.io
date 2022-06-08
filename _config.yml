@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "M.S. candidate in KAIST"
   location         : "Daejeon, Republic of Korea"
-  email            :
+  email            : "cdy3773@kaist.ac.kr"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
