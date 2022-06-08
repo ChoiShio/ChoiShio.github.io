@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "DaYun Choi"
-  avatar           : "/assets/images/bio-photo.jpg"
+  avatar           : "./assets/images/bio-photo.jpg"
   bio              : "M.S. candidate in EE at KAIST"
   location         : "Daejeon, Republic of Korea"
   email            : "cdy3773@kaist.ac.kr"
