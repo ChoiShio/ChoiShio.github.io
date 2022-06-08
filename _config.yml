@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : Started from June 8th, 2022
 name                     : "DaYun Choi"
 description              : "This page will be filled with my study & research"
-url                      : "http://choishio.github.io/"
+url                      : "https://choishio.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ChoiShio/ChoiShio.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
