@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "en-US" # "ko-KR"
-title                    : "Welcome to my page :)"
+title                    : "Welcome to my world :)"
 title_separator          : "-"
-subtitle                 : "Started from June 8th, 2022"
+subtitle                 : "Since 2022"
 name                     : "DaYun Choi"
 description              : "This page will be filled with my study & research"
 url                      : "https://choishio.github.io/"
@@ -292,11 +292,11 @@ defaults:  # 페이지의 머리말에 선언하지 않아도 아래 내용들�
       author_profile: true  # 내 프로필을 사이드바에 표시함
       read_time: false      # '한 포스트를 다 읽는데 n분 걸림' 이라는 문구를 붙여주는 완독 추측 시간
       comments: true        # 댓글 기능 활성화
-      share: false      # 소셜 공유 기능 활성화
+      share: true       # 소셜 공유 기능 활성화
       related: true     # 관련 포스트 추천 활성화
       toc: true         # 현재 페이지의 목차 보기 활성화
       sidebar:          # (내 커스텀 변수) 블로그 목차 보기
-        nav: main-sidebar   # (내 커스텀 변수) /_data/navigation.yml에 main-sidebar의 내용을 정의
+        nav: /posts/ # main-sidebar   # (내 커스텀 변수) /_data/navigation.yml에 main-sidebar의 내용을 정의
 # (내 커스텀 기능) 구글 드라이브에서 이미지 가져오기 url 접두어
 # gdrive_url_prefix: "https://drive.google.com/uc?export=view&id="
 
