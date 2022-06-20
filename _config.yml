@@ -285,7 +285,7 @@ compress_html:
 # https://seungwubaek.github.io/blog/first_post/
 defaults:  # 페이지의 머리말에 선언하지 않아도 아래 내용들은 기본값으로 적용됨.
   - scope:
-      path: "POSTS"   
+      path: "POSTS/_posts"   
       type: posts       # 포스트 타입의 페이지에 적용
     values:
       layout: single    # single 레이아웃을 적용
