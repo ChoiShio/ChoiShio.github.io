@@ -7,17 +7,23 @@ last_modified_at: "2022-06-20 17:40"  # 마지막 수정 날짜.
 comments: false
 ---
 
-<b>최다윤(DaYun Choi)</b>
+**최다윤 (DaYun Choi)**
 
 Mobile : (+82) 010-4948-2139
 
-Email : cdy3773@kaist.ac.kr
+E-mail : cdy3773@kaist.ac.kr
+
+---
 
 ## Education
 - 2014.03 ~ 2017.02   Sewon Highschool
 - 2018.03 ~ 2022.02   B.S. in Electronic Engineering at Sogang University (Summa Cum Laude)
 - 2022.03 ~ now       M.S. candidate in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
 
+---
+
 ## Experiences
+
+---
 
 ## Research interests
