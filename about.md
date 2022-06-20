@@ -15,7 +15,7 @@ E-mail : cdy3773@kaist.ac.kr
 
 ## Education
 - 2014.03 ~ 2017.02   Sewon Highschool
-- 2018.03 ~ 2022.02   B.S. in Electronic Engineering at Sogang University (Summa Cum Laude)
+- 2018.03 ~ 2022.02   B.S. in Electronic Engineering at Sogang University (_Summa Cum Laude_)
 - 2022.03 ~ now       M.S. candidate in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
 
 ## Experiences
