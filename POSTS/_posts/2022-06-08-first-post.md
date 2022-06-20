@@ -13,7 +13,7 @@ published: true
 
 I will sometimes upload my study & research.
 
-Now, there are no content since I have just made this page.
+Now, there is no content since I have just made this page.
 
 So please wait until the frame of this website is completed!
 
