@@ -8,6 +8,8 @@ main:
     url: /blog/categories/
   - title: "Tags"
     url: /blog/tags/
+  - title: "GuestBook"
+    url: /guestbook/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
