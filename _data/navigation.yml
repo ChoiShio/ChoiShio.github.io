@@ -16,7 +16,7 @@
 #   #   url: /sitemap/
 
 # Navigation (2nd level links supported)
-nav:
+main:
   About:
     - '/about/'
   Posts:
