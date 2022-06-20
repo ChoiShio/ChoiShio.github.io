@@ -1,20 +1,28 @@
-# main links
-main:
-  - title: "About"
-    url: /about/
-  - title: "Posts"
-    url: 
-      - '/'
-      - { Yearly: '/blog/archive/' }
-      - { Categories: '/blog/categories/' }
-      - { Tags: '/blog/tags/' }
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+# # main links
+# main:
+#   - title: "About"
+#     url: /ABOUT/
+#   - title: "Posts"
+#     url: /POSTS/
+#   - title: "Quick-Start Guide"
+#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+#   # - title: "About"
+#   #   url: https://mmistakes.github.io/minimal-mistakes/about/
+#   # - title: "Sample Posts"
+#   #   url: /year-archive/
+#   # - title: "Sample Collections"
+#   #   url: /collection-archive/
+#   # - title: "Sitemap"
+#   #   url: /sitemap/
+
+# Navigation (2nd level links supported)
+nav:
+  About:
+    - '/about/'
+  Posts:
+    - '/'
+    - { Yearly: '/blog/archive/' }
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  Quick-Start Guide:
+    - 'https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/'
