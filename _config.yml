@@ -301,3 +301,14 @@ defaults:  # 페이지의 머리말에 선언하지 않아도 아래 내용들�
 # gdrive_url_prefix: "https://drive.google.com/uc?export=view&id="
 
 future: true
+
+nav:
+  About:
+    - '/about/'
+  Posts:
+    - '/'
+    - { Yearly: '/blog/archive/' }
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  Quick-Start Guide:
+    - 'https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/'
