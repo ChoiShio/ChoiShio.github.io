@@ -303,16 +303,16 @@ compress_html:
 # future: true
 
 # Navigation (2nd level links supported)
-nav:
-  About:
-    - '/about/'
-  Posts:
-    - '/'
-    - { Yearly: '/blog/archive/' }
-    - { Categories: '/blog/categories/' }
-    - { Tags: '/blog/tags/' }
-  Quick-Start Guide:
-    - 'https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/'
+# nav:
+#   About:
+#     - '/about/'
+#   Posts:
+#     - '/'
+#     - { Yearly: '/blog/archive/' }
+#     - { Categories: '/blog/categories/' }
+#     - { Tags: '/blog/tags/' }
+#   Quick-Start Guide:
+#     - 'https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/'
 
 # Where are tags and categories displayed
 tag_page: '/blog/tags/'

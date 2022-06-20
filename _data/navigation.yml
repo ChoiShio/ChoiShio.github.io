@@ -1,9 +1,13 @@
 # main links
 main:
   - title: "About"
-    url: /ABOUT/
+    url: /about/
   - title: "Posts"
-    url: /POSTS/
+    url: 
+      - '/'
+      - { Yearly: '/blog/archive/' }
+      - { Categories: '/blog/categories/' }
+      - { Tags: '/blog/tags/' }
   - title: "Quick-Start Guide"
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
