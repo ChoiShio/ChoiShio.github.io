@@ -1,6 +1,3 @@
-{
-    "origins": [
-      "http://choishio.github.io/",
-      "https://choishio.github.io/"
-    ]
+{ 
+    "origins": ["https://choishio.github.io/"]
 }
