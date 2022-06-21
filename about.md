@@ -28,6 +28,6 @@ E-mail : cdy3773@kaist.ac.kr
 ## Honors & Awards
 ### Sogang University
 - 2018.11.29, 2019.03.29, 2020.03.30 Dean's List for Electronic Engineering
-- 2018.11.16 The 3rd Prize at the Proposal Contest of General Elective Subjects [link](http://wholeperson.sogang.ac.kr/front/boardlist.do?bbsconfig=1){:target="_blank"}
+- 2018.11.16 The 3rd Prize at the 7th Proposal Contest of General Elective Subjects [link](http://wholeperson.sogang.ac.kr/front/boardlist.do?bbsconfig=1){:target="_blank"}
 - 2020.03 ~ 2022.02 The National Scholarship for Science and Engineering
 
