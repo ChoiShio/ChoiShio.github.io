@@ -13,7 +13,7 @@ published: true
 comments: true
 ---
 
-I will sometimes upload my study & research.
+I will sometimes upload my study & research (or diary).
 
 Now, there is no content since I have just made this page.
 
