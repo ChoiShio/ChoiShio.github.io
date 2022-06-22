@@ -9,9 +9,9 @@
      <i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span>
   </a> -->
 
-  <a  href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}" class="btn btn--email"
+  <a href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{ site.baseurl }}{{ page.url }}" class="btn btn--email"
      onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-     title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} E-mail" >
+     title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} E-mail">
      <i class="fa fa-envelope share-button"> E-mail</i>
   </a>                          
 
@@ -29,10 +29,10 @@
 
   <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
   <script>
-      Kakao.init("5dcd27f4d8488ac5c4ca8ee29809f86a");   // 아까 복사해둔 JavaScript 키
+      Kakao.init("5dcd27f4d8488ac5c4ca8ee29809f86a");
       function sendLink() {
         Kakao.Link.sendCustom({
-          templateId: 78601,   // 복사해둔 템플릿 ID
+          templateId: 78601,
           templateArgs: {
             title: "{{page.title}}",
             description: "{{page.excerpt}}",
