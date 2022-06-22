@@ -34,9 +34,9 @@
         Kakao.Link.sendCustom({
           templateId: 78601,   // 복사해둔 템플릿 ID
           templateArgs: {
-            title: "{{ page.title }}",
-            description: "{{ page.description }}",
-            url : "{{ page.url }}",
+            title: "{{page.title}}",
+            description: "{{page.excerpt}}",
+            url : "{{page.url}}",
           },
         });
       }
