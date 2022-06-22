@@ -12,7 +12,7 @@ last_modified_at: "2022-06-21 14:30"  # 마지막 수정 날짜.
 published: true
 comments: true
 toc: true
-toc_sticky: false
+toc_sticky: true
 ---
 
 I will sometimes upload my study & research (or diary).
