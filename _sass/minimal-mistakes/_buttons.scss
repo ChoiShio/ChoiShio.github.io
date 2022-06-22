@@ -40,6 +40,7 @@
   (facebook, $facebook-color),
   (twitter, $twitter-color),
   (comment, #FDDC3F),
+  (email, #000000),
   (linkedin, $linkedin-color);
 
   @each $buttoncolor, $color in $buttoncolors {
