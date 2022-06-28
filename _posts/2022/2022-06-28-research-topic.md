@@ -6,7 +6,7 @@ category: Research
 tags: audio visual separation detection classification extraction
 excerpt: 
 date: "2022-06-28 14:00"
-last_modified_at: "2022-06-28 14:00"
+last_modified_at: "2022-06-28 21:30"
 published: true
 comments: true
 toc: true
@@ -18,7 +18,7 @@ I have just decided my research topic!
 
 It is "Sound Source Separation based on Audio-Visual Multimodal Learning".
 
-There are the following things for this task:
+There are the following things to implement for this task:
 - Detection of the objects in video for instance level
 - Classification of the sound of them in audio
 - Learning the audio-visual model jointly for separation of the sound sources
