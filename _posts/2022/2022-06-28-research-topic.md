@@ -30,14 +30,10 @@ You can refer to the following figures to understand this task.
     Michelsanti, Daniel, et al. "An overview of deep-learning-based audio-visual speech enhancement and separation." IEEE/ACM Transactions on Audio, Speech, and Language Processing 29 (2021): 1368-1396.
 </p>
 
- 
-
 <p align="center">
     <img src = "https://user-images.githubusercontent.com/74304696/176095723-69c8ef14-a156-41ae-93d5-a0b3f3196693.png">
     <img src = "https://user-images.githubusercontent.com/74304696/176095726-a38700d7-e957-4dd8-8458-5ba4dc264018.png">
     Zhao, Hang, et al. "The sound of pixels." Proceedings of the European conference on computer vision (ECCV). 2018.
 </p>
-
- 
 
 I hope that my reserch will be well~ :)
