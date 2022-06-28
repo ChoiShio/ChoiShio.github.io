@@ -40,4 +40,4 @@ You can refer to the following figures to understand this task.
 </p>
 <center> Zhao, Hang, et al. "The sound of pixels." Proceedings of the European conference on computer vision (ECCV). 2018. </center>
 
-I hope that my reserch will be well~
+I hope that my reserch will be well~ :)
