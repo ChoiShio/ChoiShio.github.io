@@ -18,6 +18,8 @@ I have just decided my research topic!
 
 It is "Sound Source Separation based on Audio-Visual Multimodal Learning".
 
+> Let's assume that we are the audiences of an orchestra and we can hear the sounds of violin and flute but cannot hear the sounds of piano well. At this time, we can see the performers playing three instruments respectively. Then we can understand that there are three instruments and the magnitude of piano sounds is litte. So the visual information can be used to help to know what sounds there are and separate them.
+
 There are the following things to implement for this task:
 - Detection of the objects in video for instance level
 - Classification of the sound of them in audio
