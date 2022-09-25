@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "About"
-author: DaYun Choi                    # authors.yml 파일에 존재하는 username 값
+author: Da Yun Choi                   # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
 last_modified_at: "2022-06-27 11:30"  # 마지막 수정 날짜.
 comments: false
@@ -14,7 +14,7 @@ E-mail : cdy3773@kaist.ac.kr
 ## Education
 <!-- - \[2014.03 ~ 2017.02\]  Sewon Highschool -->
 - \[2018.03 ~ 2022.02\]  B.S. in Electronic Engineering at Sogang University (_Summa Cum Laude_)
-- \[2022.03 ~ now\]      M.S. candidate in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
+- \[2022.03 ~ now\]      M.S. & Ph.D. integrated program student in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
 
 ## Research interests
 - Image Processing & Computer Vision
