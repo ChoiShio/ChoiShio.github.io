@@ -25,6 +25,7 @@ E-mail : cdy3773@kaist.ac.kr
 #### Sogang University
 - \[2019.06.29 ~ 07.09\]  The 24th Overseas Culture Tour to Greece & Türkiye
 - \[2021.07.19 ~ 07.30\]  The 2nd Software Pre-Education Program for Hyundai Mobis - Sogang University (FoSS) [link](https://jewel-emmental-07f.notion.site/FoSS-2-SW-1550c601fff34920a9844514472474d0){:target="_blank"}
+
 #### KAIST
 - \[2022-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Professor: Jung Woo Choi)
 
