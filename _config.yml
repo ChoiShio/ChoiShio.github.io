@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Da Yun Choi"
+  name             : "Da-Yun Choi"
   avatar           : "./assets/images/bio-photo.jpg"
   bio              : "M.S. & Ph.D. student at KAIST, EE<br>Interested in Multimodal Learning"
   location         : "Daejeon, Republic of Korea"

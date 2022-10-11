@@ -7,7 +7,7 @@ last_modified_at: "2022-09-27 15:00"  # 마지막 수정 날짜.
 comments: false
 ---
 
-최다윤 (Da Yun Choi)  
+최다윤 (Da-Yun Choi)  
 Mobile : (+82) 010-4948-2139  
 E-mail : cdy3773@kaist.ac.kr
 
