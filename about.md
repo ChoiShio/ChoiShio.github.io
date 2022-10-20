@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "About"
-author: Da Yun Choi                   # authors.yml 파일에 존재하는 username 값
+author: Da-Yun Choi                   # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
 last_modified_at: "2022-09-27 15:00"  # 마지막 수정 날짜.
 comments: false
@@ -27,7 +27,7 @@ E-mail : cdy3773@kaist.ac.kr
 - \[2021.07.19 ~ 07.30\]  The 2nd Software Pre-Education Program for Hyundai Mobis - Sogang University (FoSS) [link](https://jewel-emmental-07f.notion.site/FoSS-2-SW-1550c601fff34920a9844514472474d0){:target="_blank"}
 
 #### KAIST
-- \[2022-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Professor: Jung Woo Choi)
+- \[2022-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 
 ## Honors & Awards
 #### Sogang University
