@@ -19,7 +19,7 @@ locale                   : "en-US" # "ko-KR"
 title                    : "Welcome to SHIO-LAB :)"
 title_separator          : "-"
 subtitle                 : "Since 2022"
-name                     : "Da-Yun Choi"
+name                     : "Dayun Choi"
 description              : "This page will be filled with my study & research"
 url                      : "https://choishio.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,7 +104,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Da-Yun Choi"
+  name             : "Dayun Choi"
   avatar           : "./assets/images/bio-photo.jpg"
   bio              : "M.S. & Ph.D. student at KAIST, EE<br>Interested in Multimodal Learning"
   location         : "Daejeon, Republic of Korea"
