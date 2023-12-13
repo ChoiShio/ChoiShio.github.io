@@ -3,7 +3,7 @@ layout: single
 title: "About"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2023-06-07 11:00"  # 마지막 수정 날짜.
+last_modified_at: "2023-12-13 15:00"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -19,9 +19,9 @@ E-mail : cdy3773@kaist.ac.kr
 
 
 ## Research interests
+- Deep Learning-based Target Sound Extraction
+- Deep Learning on Multimodal Systems
 - Image Processing & Computer Vision
-- Deep Learning based on Multimodal Systems
-- DL-based Target Sound Extraction
 
 
 ## Experiences
@@ -32,11 +32,15 @@ E-mail : cdy3773@kaist.ac.kr
 #### KAIST
 - \[2022-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 - \[2023-Spring\]  Teaching Assistant of \[EE305\] Introduction to Electronics Design Lab. (Lecturer: Jun-Bo Yoon)
+- \[2023-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
+- \[2023-Winter\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 
 
 ## Honors & Awards
 #### Sogang University
-- \[2018.11.29\], \[2019.03.29\], \[2020.03.30\]  Dean's List for Electronic Engineering
+- \[2018.11.29\]  Dean's List for Electronic Engineering
+- \[2019.03.29\]  Dean's List for Electronic Engineering
+- \[2020.03.30\]  Dean's List for Electronic Engineering
 - \[2018.11.16\]  The 3rd Prize at the 7th Proposal Contest of General Elective Subjects [link](http://wholeperson.sogang.ac.kr/front/boardlist.do?bbsconfig=1){:target="_blank"}
 - \[2020.03 ~ 2022.02\]  The National Scholarship for Science and Engineering
 
@@ -44,3 +48,6 @@ E-mail : cdy3773@kaist.ac.kr
 ## Journal & Conference
 #### Domestic Conference
 - Dayun Choi, Dongheon Lee, Jung-Woo Choi*, "Low Complexity DNN Model for Multichannel Speech Enhancement," Spring Annual Conference of KSNVE 2023, Samcheok, Korea, p132, May, 2023. [link](https://conf.ksnve.or.kr/2023s/){:target="_blank"}
+
+#### International Conference
+- Dayun Choi, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," Acoustics 2023, Sydney, Australia, Dec. 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
