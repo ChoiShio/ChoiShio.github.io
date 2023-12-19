@@ -33,7 +33,7 @@ E-mail : cdy3773@kaist.ac.kr
 - \[2022-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 - \[2023-Spring\]  Teaching Assistant of \[EE305\] Introduction to Electronics Design Lab. (Lecturer: Jun-Bo Yoon)
 - \[2023-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
-- \[2023-Winter\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
+- \[2023-Winter\]  Teaching Assistant (Head) of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 
 
 ## Honors & Awards
