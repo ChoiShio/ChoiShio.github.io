@@ -47,7 +47,7 @@ E-mail : cdy3773@kaist.ac.kr
 
 ## Journal & Conference
 #### Domestic Conference
-- Dayun Choi, Dongheon Lee, Jung-Woo Choi*, "Low Complexity DNN Model for Multichannel Speech Enhancement," Spring Annual Conference of KSNVE 2023, Samcheok, Korea, p132, May, 2023. [link](https://conf.ksnve.or.kr/2023s/){:target="_blank"}
+- <U>**Dayun Choi**</U>, Dongheon Lee, Jung-Woo Choi*, "Low Complexity DNN Model for Multichannel Speech Enhancement," Spring Annual Conference of KSNVE 2023, Samcheok, Korea, p132, May, 2023. [link](https://conf.ksnve.or.kr/2023s/){:target="_blank"}
 
 #### International Conference
-- Dayun Choi, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," Acoustics 2023, Sydney, Australia, Dec. 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
+- <U>**Dayun Choi**</U>, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," Acoustics 2023, Sydney, Australia, Dec, 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
