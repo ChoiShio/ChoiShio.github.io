@@ -57,4 +57,6 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 - Dongheon Lee, **<U>Dayun Choi</U>**, and Jung-Woo Choi*, "DeFT-AN RT: Real-time Multichannel Speech Enhancement using Dense Frequency-Time Attentive Network and Non-overlapping Synthesis Window," INTERSPEECH 2023, Dublin, Ireland, Aug, 2023. [link](https://web.archive.org/web/20240128020151id_/https://www.isca-archive.org/interspeech_2023/lee23j_interspeech.pdf){:target="_blank"}
 
 #### Domestic Conferences
+- **<U>Dayun Choi</U>**, Jung-Woo Choi*, “Target sound extraction on reverberant mixture using sound-class label and timestamp information,” The Korean Society of Acoustics, Seogwipo, Korea, May, 2024. [link](https://www.ask.or.kr/){:target="_blank"}
+
 - **<U>Dayun Choi</U>**, Dongheon Lee, Jung-Woo Choi*, "Low Complexity DNN Model for Multichannel Speech Enhancement," The Korean Society of Noise and Vibration Engineering, Samcheok, Korea, May, 2023. [link](https://conf.ksnve.or.kr/2023s/){:target="_blank"}
