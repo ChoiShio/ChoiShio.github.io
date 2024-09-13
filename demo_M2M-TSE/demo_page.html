@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeFTAN-II</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 1px;
+            background-color: #f2f2f2;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .author {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        .affiliation {
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0 20px 0;
+            font-style: italic;
+        }
+        .content {
+            border-top: 2px solid orange;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .dataset-name {
+            text-align: center;
+            font-weight: bold;
+        }
+        .sample {
+            flex: 1 1 calc(20% - 20px); /* 모든 열이 4개씩 들어가도록 설정 */
+            box-sizing: border-box;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+	.figure img {
+            height: 360px;
+            display: center;
+            margin: 10 auto;
+        }
+        .spectrogram img {
+            height: 200px;
+            display: left;
+            margin: 10 auto;
+        }
+        .audio-control {
+            text-align: left;
+        }
+    	.download-icon {
+            font-size: 14pt;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues</h1>
+    </header>
+    <p class="author"> <b>Dayun Choi</b> and <b>Jung-Woo Choi</b></p>
+    <p class="affiliation">School of Electrical Engineering, KAIST</p>
+    <p class="section_title"><b>Abstract</b></p>
+    <p>We propose a multichannel-to-multichannel target sound extraction (M2M-TSE) framework for separating multichannel target signals from a multichannel mixture of sound sources. Target sound extraction (TSE) isolates a specific target signal using user-provided clues, typically focusing on single-channel extraction with class labels or temporal activation maps. However, to preserve and utilize spatial information in multichannel audio signals, it is essential to extract multichannel signals of a target sound source. Moreover, the clue for extraction can also include spatial or temporal cues like direction-of-arrival (DoA) or timestamps of source activation.  To address these challenges, we present an M2M framework that extracts a multichannel sound signal based on spatio-temporal clues. 
+        We demonstrate that our transformer-based architecture can successively accomplish the M2M-TSE task for multichannel signals synthesized from audio signals of diverse classes in different room environments. Furthermore, we show that the multichannel extraction task introduces sufficient inductive bias in the DNN, allowing it to directly handle DoA clues without utilizing hand-crafted spatial features. </p>
+    
+    <p><strong>Model Architecture</strong></p>
+    <div class="figure_model">
+        <CENTER>
+        <img src="./fig_paper/model_architecture.jpg" alt="overall_architecture" width="1100" height="400">
+        </CENTER>
+    </div>
+    
+    <p><strong>Performance Comparisons across TSE Models and Clues</strong></p>
+    <div class="figure_result1">
+        <CENTER>
+        <img src="./fig_paper/exp_result.png" alt="experimental result">
+        </CENTER>
+    </div>
+    
+    <p><strong>SNRi and SI-SNRi Change with respect to Target Azimuth Angle</strong></p>
+    <div class="figure_result2">
+        <CENTER>
+        <img src="./fig_paper/sensitivity.png" alt="direction sensitivity" width="800" height="600">
+        </CENTER>
+    </div>
+    
+    <p><strong>Contents: </strong>We provide one sound demo for results of all models. </p>
+
+
+    <section class="content">
+        <!-- <div class="dataset-name">One Sample</div> -->
+        <div class="Waveform of all channels">
+            <CENTER>
+            <img src="./fig_sample1/input_mixture.png" alt="Waveform of Input Mixture" width="350">
+            <img src="./fig_sample1/ground_truth.png" alt="Waveform of Ground Truth" width="350">
+            <img src="./fig_sample1/Waveformer_TS_D=40.png" alt="Waveform of Waveformer_TS_D=40" width="350">
+            <img src="./fig_sample1/Waveformer_OH+TS_D=360.png" alt="Waveform of Waveformer_OH+TS_D=360" width="350">
+            <img src="./fig_sample1/Waveformer_CP+TS_D=40,a=20.png" alt="Waveform of Waveformer_CP+TS_D=40,a=20" width="350">
+            </CENTER>
+        </div>
+        <div class="audio-control">
+            <!-- Add audio controls for each type (noisy, enhanced, clean) -->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/input_mixture.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/ground_truth.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Waveformer_TS_D=40.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section class="content">
+        <!-- <div class="dataset-name">One Sample</div> -->
+        <div class="Waveform of all channels">
+            <CENTER>
+            <img src="./fig_sample1/Proposed_TS_D=40.png" alt="Waveform of Proposed_TS_D=40" width="350">
+            <img src="./fig_sample1/Proposed_OH+TS_D=360.png" alt="Waveform of Proposed_OH+TS_D=360" width="350">
+            <img src="./fig_sample1/Proposed_CP+TS_D=40,a=80.png" alt="Waveform of Proposed_CP+TS_D=40,a=80" width="350">
+            <img src="./fig_sample1/Proposed_CP+TS_D=40,a=40.png" alt="Waveform of Proposed_CP+TS_D=40,a=40" width="350">
+            <img src="./fig_sample1/Proposed_CP+TS_D=40,a=20.png" alt="Waveform of Proposed_CP+TS_D=40,a=20" width="350">
+            </CENTER>
+        </div>
+        <div class="audio-control">
+            <!-- Add audio controls for each type (noisy, enhanced, clean) -->
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Proposed_TS_D=40.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Proposed_CP+TS_D=40,a=80.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Proposed_CP+TS_D=40,a=40.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <audio controls>
+                <source src="./audio_sample1/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+
+    <section class="content">
+
+    </section>
+
+
+    <footer>
+        <p>&copy; <a href="https://www.sound.kaist.ac.kr/" target="_blank">Smart Sound System Lab.</a></p>
+    </footer>
+
+</body>
+</html>
