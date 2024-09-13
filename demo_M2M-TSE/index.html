@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeFTAN-II</title>
+    <title>Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 20px;
+            margin: 10px;
         }
-        header {
-            text-align: center;
-            padding: 1px;
-            background-color: #f2f2f2;
-        }
-        section {
-            margin: 20px 0;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .author {
             text-align: center;
@@ -25,35 +22,96 @@
         .affiliation {
             text-align: center;
             font-size: 16px;
-            margin: 10px 0 20px 0;
+            margin: 10px 0 10px 0;
             font-style: italic;
         }
+        .e-mail {
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0 20px 0;
+        }
+        .section_title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 70px 0 20px 0;
+        }
+        .section_exp {
+            text-align: center;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        .abstract {
+            text-align: justify;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .big_img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 1px;
+            background-color: #f2f2f2;
+        }
+        section {
+            margin: 20px 0;
+        }
         .content {
-            border-top: 2px solid orange;
-            padding-top: 20px;
-            margin-top: 20px;
+            /* border-top: 2px solid #72A0C1; */
+            padding-top: 10px;
+            margin: 20px 0 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
         }
         .dataset-name {
+            border-top: 2px solid #72A0C1;
             text-align: center;
             font-weight: bold;
+            margin: 10px 0;
+            font-size: 20px;
+            padding: 10px 0 10px 0;
         }
         .sample {
-            flex: 1 1 calc(20% - 20px); /* 모든 열이 4개씩 들어가도록 설정 */
+            flex: 1 1 calc(20% - 20px);
             box-sizing: border-box;
             padding: 5px;
             background-color: #f9f9f9;
             border: 1px solid #ddd;
             text-align: center;
         }
-	.figure img {
-            height: 360px;
-            display: center;
-            margin: 10 auto;
+        .data_title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .data_exp {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sample img {
+            max-width: 100%;
+            height: auto;
+        }
+        .sample audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+	    .figure img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
         }
         .spectrogram img {
             height: 200px;
             display: left;
-            margin: 10 auto;
+            margin: 0 auto;
         }
         .audio-control {
             text-align: left;
@@ -69,131 +127,508 @@
             display: inline-block;
         }
     </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 </head>
 <body>
-    <header>
-        <h1>Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues</h1>
-    </header>
-    <p class="author"> <b>Dayun Choi</b> and <b>Jung-Woo Choi</b></p>
-    <p class="affiliation">School of Electrical Engineering, KAIST</p>
-    <p class="section_title"><b>Abstract</b></p>
-    <p>We propose a multichannel-to-multichannel target sound extraction (M2M-TSE) framework for separating multichannel target signals from a multichannel mixture of sound sources. Target sound extraction (TSE) isolates a specific target signal using user-provided clues, typically focusing on single-channel extraction with class labels or temporal activation maps. However, to preserve and utilize spatial information in multichannel audio signals, it is essential to extract multichannel signals of a target sound source. Moreover, the clue for extraction can also include spatial or temporal cues like direction-of-arrival (DoA) or timestamps of source activation.  To address these challenges, we present an M2M framework that extracts a multichannel sound signal based on spatio-temporal clues. 
-        We demonstrate that our transformer-based architecture can successively accomplish the M2M-TSE task for multichannel signals synthesized from audio signals of diverse classes in different room environments. Furthermore, we show that the multichannel extraction task introduces sufficient inductive bias in the DNN, allowing it to directly handle DoA clues without utilizing hand-crafted spatial features. </p>
-    
-    <p><strong>Model Architecture</strong></p>
-    <div class="figure_model">
-        <CENTER>
-        <img src="./fig_paper/model_architecture.jpg" alt="overall_architecture" width="1100" height="400">
-        </CENTER>
-    </div>
-    
-    <p><strong>Performance Comparisons across TSE Models and Clues</strong></p>
-    <div class="figure_result1">
-        <CENTER>
-        <img src="./fig_paper/exp_result.png" alt="experimental result">
-        </CENTER>
-    </div>
-    
-    <p><strong>SNRi and SI-SNRi Change with respect to Target Azimuth Angle</strong></p>
-    <div class="figure_result2">
-        <CENTER>
-        <img src="./fig_paper/sensitivity.png" alt="direction sensitivity" width="800" height="600">
-        </CENTER>
-    </div>
-    
-    <p><strong>Contents: </strong>We provide one sound demo for results of all models. </p>
-
-
-    <section class="content">
-        <!-- <div class="dataset-name">One Sample</div> -->
-        <div class="Waveform of all channels">
+    <div class="container">
+        <header>
+            <h1>Multichannel-to-Multichannel <br> Target Sound Extraction <br> Using Direction and Timestamp Clues</h1>
+        </header>
+        <p class="author"> <b>Dayun Choi</b> and <b>Jung-Woo Choi</b></p>
+        <p class="affiliation">School of Electrical Engineering, KAIST</p>
+        <p class="e-mail"> {cdy3773, jwoo}@kiast.ac.kr </p>
+        <p class="section_title">Abstract</p>
+        <p>We propose a multichannel-to-multichannel target sound extraction (M2M-TSE) framework for separating multichannel target signals from a multichannel mixture of sound sources. Target sound extraction (TSE) isolates a specific target signal using user-provided clues, typically focusing on single-channel extraction with class labels or temporal activation maps. However, to preserve and utilize spatial information in multichannel audio signals, it is essential to extract multichannel signals of a target sound source. Moreover, the clue for extraction can also include spatial or temporal cues like direction-of-arrival (DoA) or timestamps of source activation.  To address these challenges, we present an M2M framework that extracts a multichannel sound signal based on spatio-temporal clues. <br>
+            We demonstrate that our transformer-based architecture can successively accomplish the M2M-TSE task for multichannel signals synthesized from audio signals of diverse classes in different room environments. Furthermore, we show that the multichannel extraction task introduces sufficient inductive bias in the DNN, allowing it to directly handle DoA clues without utilizing hand-crafted spatial features. </p>
+        
+        <p class="section_title">Model Architecture</p>
+        <div class="figure_model">
             <CENTER>
-            <img src="./fig_sample1/input_mixture.png" alt="Waveform of Input Mixture" width="350">
-            <img src="./fig_sample1/ground_truth.png" alt="Waveform of Ground Truth" width="350">
-            <img src="./fig_sample1/Waveformer_TS_D=40.png" alt="Waveform of Waveformer_TS_D=40" width="350">
-            <img src="./fig_sample1/Waveformer_OH+TS_D=360.png" alt="Waveform of Waveformer_OH+TS_D=360" width="350">
-            <img src="./fig_sample1/Waveformer_CP+TS_D=40,a=20.png" alt="Waveform of Waveformer_CP+TS_D=40,a=20" width="350">
+            <img src="./fig_paper/model_architecture.jpg" alt="overall_architecture" width="1100" height="400">
             </CENTER>
         </div>
-        <div class="audio-control">
-            <!-- Add audio controls for each type (noisy, enhanced, clean) -->
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/input_mixture.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/ground_truth.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Waveformer_TS_D=40.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </div>
-    </section>
-
-    <section class="content">
-        <!-- <div class="dataset-name">One Sample</div> -->
-        <div class="Waveform of all channels">
+        
+        <p class="section_title">Performance Comparisons across TSE Models and Clues</p>
+        <div class="figure_result1">
             <CENTER>
-            <img src="./fig_sample1/Proposed_TS_D=40.png" alt="Waveform of Proposed_TS_D=40" width="350">
-            <img src="./fig_sample1/Proposed_OH+TS_D=360.png" alt="Waveform of Proposed_OH+TS_D=360" width="350">
-            <img src="./fig_sample1/Proposed_CP+TS_D=40,a=80.png" alt="Waveform of Proposed_CP+TS_D=40,a=80" width="350">
-            <img src="./fig_sample1/Proposed_CP+TS_D=40,a=40.png" alt="Waveform of Proposed_CP+TS_D=40,a=40" width="350">
-            <img src="./fig_sample1/Proposed_CP+TS_D=40,a=20.png" alt="Waveform of Proposed_CP+TS_D=40,a=20" width="350">
+            <img src="./fig_paper/exp_result.png" alt="experimental result" width="1200" height="300">
             </CENTER>
         </div>
-        <div class="audio-control">
-            <!-- Add audio controls for each type (noisy, enhanced, clean) -->
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Proposed_TS_D=40.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Proposed_CP+TS_D=40,a=80.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Proposed_CP+TS_D=40,a=40.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <audio controls>
-                <source src="./audio_sample1/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
+        
+        <p class="section_title">SNRi and SI-SNRi Change with respect to Target Azimuth Angle</p>
+        <div class="figure_result2">
+            <CENTER>
+            <img src="./fig_paper/sensitivity.png" alt="direction sensitivity" width="800" height="600">
+            </CENTER>
         </div>
-    </section>
+        
+        <!-- <p><strong>Contents: </strong>We provide one sound demo for results of all models. </p> -->
+        <p class="section_title">Audio Samples</p>
+        <p class="section_exp">Click a toggle to listen to samples</p>
 
-    <section class="content">
+        <details open>
+            <summary class="dataset-name">Sample #1</summary>
+            <p class="section_exp">Extract an audio in the direction of 251$^{\circ}$ from mixture in [6$^{\circ}$, 111$^{\circ}$, 207$^{\circ}$, 251$^{\circ}$]</p>
+            <!-- The first data -->
+            <div class="content">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./fig_sample1/input_mixture.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./audio_sample1/input_mixture.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Ground Truth</div>
+                    <img src="./fig_sample1/ground_truth.png" alt="Ground Truth">
+                    <audio controls>
+                        <source src="./audio_sample1/ground_truth.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample1/Proposed_CP+TS_D=40,a=20.png" alt="Proposed (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample1/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=40)</div>
+                    <img src="./fig_sample1/Proposed_CP+TS_D=40,a=40.png" alt="Proposed (CP+TS_D=40,a=40)">
+                    <audio controls>
+                        <source src="./audio_sample1/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=80)</div>
+                    <img src="./fig_sample1/Proposed_CP+TS_D=40,a=80.png" alt="Proposed (CP+TS_D=40,a=80)">
+                    <audio controls>
+                        <source src="./audio_sample1/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
 
-    </section>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample1/Proposed_OH+TS_D=360.png" alt="Proposed (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample1/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample1/Proposed_TS_D=40.png" alt="Proposed (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample1/Proposed_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample1/Waveformer_CP+TS_D=40,a=20.png" alt="Waveformer (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample1/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample1/Waveformer_OH+TS_D=360.png" alt="Waveformer (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample1/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample1/Waveformer_TS_D=40.png" alt="Waveformer (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample1/Waveformer_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </details>
 
 
-    <footer>
-        <p>&copy; <a href="https://www.sound.kaist.ac.kr/" target="_blank">Smart Sound System Lab.</a></p>
-    </footer>
+        <details open>
+            <summary class="dataset-name">Sample #2</summary>
+            <p class="section_exp">Extract an audio in the direction of 20$^{\circ}$ from mixture in [20$^{\circ}$, 44$^{\circ}$, 122$^{\circ}$, 174$^{\circ}$]</p>
+            <!-- The second data -->
+            <div class="content">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./fig_sample2/input_mixture.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./audio_sample2/input_mixture.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Ground Truth</div>
+                    <img src="./fig_sample2/ground_truth.png" alt="Ground Truth">
+                    <audio controls>
+                        <source src="./audio_sample2/ground_truth.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample2/Proposed_CP+TS_D=40,a=20.png" alt="Proposed (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample2/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=40)</div>
+                    <img src="./fig_sample2/Proposed_CP+TS_D=40,a=40.png" alt="Proposed (CP+TS_D=40,a=40)">
+                    <audio controls>
+                        <source src="./audio_sample2/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=80)</div>
+                    <img src="./fig_sample2/Proposed_CP+TS_D=40,a=80.png" alt="Proposed (CP+TS_D=40,a=80)">
+                    <audio controls>
+                        <source src="./audio_sample2/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
 
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample2/Proposed_OH+TS_D=360.png" alt="Proposed (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample2/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample2/Proposed_TS_D=40.png" alt="Proposed (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample2/Proposed_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample2/Waveformer_CP+TS_D=40,a=20.png" alt="Waveformer (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample2/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample2/Waveformer_OH+TS_D=360.png" alt="Waveformer (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample2/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample2/Waveformer_TS_D=40.png" alt="Waveformer (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample2/Waveformer_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </details>
+
+
+        <details open>
+            <summary class="dataset-name">Sample #3</summary>
+            <p class="section_exp">Extract an audio in the direction of 47$^{\circ}$ from mixture in [25$^{\circ}$, 47$^{\circ}$, 69$^{\circ}$, 207$^{\circ}$]</p>
+            <!-- The third data -->
+            <div class="content">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./fig_sample3/input_mixture.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./audio_sample3/input_mixture.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Ground Truth</div>
+                    <img src="./fig_sample3/ground_truth.png" alt="Ground Truth">
+                    <audio controls>
+                        <source src="./audio_sample3/ground_truth.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample3/Proposed_CP+TS_D=40,a=20.png" alt="Proposed (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample3/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=40)</div>
+                    <img src="./fig_sample3/Proposed_CP+TS_D=40,a=40.png" alt="Proposed (CP+TS_D=40,a=40)">
+                    <audio controls>
+                        <source src="./audio_sample3/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=80)</div>
+                    <img src="./fig_sample3/Proposed_CP+TS_D=40,a=80.png" alt="Proposed (CP+TS_D=40,a=80)">
+                    <audio controls>
+                        <source src="./audio_sample3/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample3/Proposed_OH+TS_D=360.png" alt="Proposed (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample3/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample3/Proposed_TS_D=40.png" alt="Proposed (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample3/Proposed_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample3/Waveformer_CP+TS_D=40,a=20.png" alt="Waveformer (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample3/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample3/Waveformer_OH+TS_D=360.png" alt="Waveformer (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample3/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample3/Waveformer_TS_D=40.png" alt="Waveformer (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample3/Waveformer_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </details>
+
+
+        <details open>
+            <summary class="dataset-name">Sample #4</summary>
+            <p class="section_exp">Extract an audio in the direction of 321$^{\circ}$ from mixture in [68$^{\circ}$, 179$^{\circ}$, 270$^{\circ}$, 321$^{\circ}$]</p>
+            <!-- The fourth data -->
+            <div class="content">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./fig_sample4/input_mixture.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./audio_sample4/input_mixture.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Ground Truth</div>
+                    <img src="./fig_sample4/ground_truth.png" alt="Ground Truth">
+                    <audio controls>
+                        <source src="./audio_sample4/ground_truth.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample4/Proposed_CP+TS_D=40,a=20.png" alt="Proposed (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample4/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=40)</div>
+                    <img src="./fig_sample4/Proposed_CP+TS_D=40,a=40.png" alt="Proposed (CP+TS_D=40,a=40)">
+                    <audio controls>
+                        <source src="./audio_sample4/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=80)</div>
+                    <img src="./fig_sample4/Proposed_CP+TS_D=40,a=80.png" alt="Proposed (CP+TS_D=40,a=80)">
+                    <audio controls>
+                        <source src="./audio_sample4/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample4/Proposed_OH+TS_D=360.png" alt="Proposed (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample4/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample4/Proposed_TS_D=40.png" alt="Proposed (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample4/Proposed_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample4/Waveformer_CP+TS_D=40,a=20.png" alt="Waveformer (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample4/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample4/Waveformer_OH+TS_D=360.png" alt="Waveformer (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample4/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample4/Waveformer_TS_D=40.png" alt="Waveformer (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample4/Waveformer_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </details>
+
+
+        <details open>
+            <summary class="dataset-name">Sample #5</summary>
+            <p class="section_exp">Extract an audio in the direction of 330$^{\circ}$ from mixture in [3$^{\circ}$, 46$^{\circ}$, 330$^{\circ}$]</p>
+            <!-- The fifth data -->
+            <div class="content">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./fig_sample5/input_mixture.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./audio_sample5/input_mixture.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Ground Truth</div>
+                    <img src="./fig_sample5/ground_truth.png" alt="Ground Truth">
+                    <audio controls>
+                        <source src="./audio_sample5/ground_truth.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample5/Proposed_CP+TS_D=40,a=20.png" alt="Proposed (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample5/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=40)</div>
+                    <img src="./fig_sample5/Proposed_CP+TS_D=40,a=40.png" alt="Proposed (CP+TS_D=40,a=40)">
+                    <audio controls>
+                        <source src="./audio_sample5/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (cyc-pos + TS, $D$=40, $\alpha$=80)</div>
+                    <img src="./fig_sample5/Proposed_CP+TS_D=40,a=80.png" alt="Proposed (CP+TS_D=40,a=80)">
+                    <audio controls>
+                        <source src="./audio_sample5/Proposed_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample5/Proposed_OH+TS_D=360.png" alt="Proposed (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample5/Proposed_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Proposed <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample5/Proposed_TS_D=40.png" alt="Proposed (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample5/Proposed_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (cyc-pos + TS, $D$=40, $\alpha$=20)</div>
+                    <img src="./fig_sample5/Waveformer_CP+TS_D=40,a=20.png" alt="Waveformer (CP+TS_D=40,a=20)">
+                    <audio controls>
+                        <source src="./audio_sample5/Waveformer_CP+TS_D=40,a=20.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (one-hot + TS, $D$=360)</div>
+                    <img src="./fig_sample5/Waveformer_OH+TS_D=360.png" alt="Waveformer (OH+TS_D=360)">
+                    <audio controls>
+                        <source src="./audio_sample5/Waveformer_OH+TS_D=360.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample">
+                    <div class="data_title">Waveformer <br> (TS, $D$=40)</div>
+                    <img src="./fig_sample5/Waveformer_TS_D=40.png" alt="Waveformer (TS_D=40)">
+                    <audio controls>
+                        <source src="./audio_sample5/Waveformer_TS_D=40.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </details>
+
+        
+        <div class="content">
+
+        </div>
+
+
+        <footer>
+            <p>&copy; <a href="https://www.sound.kaist.ac.kr/" target="_blank">Smart Sound System Lab.</a></p>
+        </footer>
+    </div>
 </body>
 </html>
