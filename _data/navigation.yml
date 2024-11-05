@@ -2,12 +2,12 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Yearly"
-    url: /blog/archive/
-  - title: "Categories"
-    url: /blog/categories/
-  - title: "Tags"
-    url: /blog/tags/
+  # - title: "Yearly"
+  #   url: /blog/archive/
+  # - title: "Categories"
+  #   url: /blog/categories/
+  # - title: "Tags"
+  #   url: /blog/tags/
   - title: "GuestBook"
     url: /guestbook/
   # - title: "Quick-Start Guide"
