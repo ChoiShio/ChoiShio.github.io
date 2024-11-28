@@ -3,7 +3,7 @@ layout: single
 title: "About"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2024-11-05 19:00"  # 마지막 수정 날짜.
+last_modified_at: "2024-11-28 11:00"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -30,15 +30,19 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 - \[2019.06.29 ~ 07.09\]  The 24th Overseas Culture Tour to Greece & Türkiye
 
 #### KAIST
-- \[2024-Fall\]  Teaching Assistant **<U>(Head)</U>** of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 - \[2024.06.18\]  Representative Presenter (Oral) of Smart Sound Systems Lab for KAIST-NUS Joint Seminar at KAIST
 - \[2024.04.05\]  Representative Presenter (Oral) of Smart Sound Systems Lab for The 5th SORI Workshop at KAIST
-- \[2024-Spring\]  Teaching Assistant of \[EE488\] Introduction to Audio Signal Processing & \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
-- \[2023-Winter\]  Teaching Assistant **<U>(Head)</U>** of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
-- \[2023-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 - \[2023.07.13\]  Representative Presenter (Poster) of Smart Sound Systems Lab for The 4th SORI Workshop at KAIST
-- \[2023-Spring\]  Teaching Assistant of \[EE305\] Introduction to Electronics Design Lab. (Lecturer: Jun-Bo Yoon)
-- \[2022-Fall\]  Teaching Assistant of \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
+
+
+## Assistantships
+#### KAIST
+- \[2024-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi) **<U>(Head)</U>**
+- \[2024-Spring\]  \[EE488\] Introduction to Audio Signal Processing & \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
+- \[2023-Winter\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi) **<U>(Head)</U>**
+- \[2023-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
+- \[2023-Spring\]  \[EE305\] Introduction to Electronics Design Lab. (Lecturer: Jun-Bo Yoon)
+- \[2022-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 
 
 ## Honors & Awards
@@ -51,10 +55,10 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 - \[2018.11.16\]  The 3rd Prize at the 7th Proposal Contest of General Elective Subjects [link](http://wholeperson.sogang.ac.kr/front/boardlist.do?bbsconfig=1){:target="_blank"}
 
 #### KAIST
-- \[2024.03.02\]  The 1st place in for the Technical Committee on Architectural Acoustics student paper award for the December Sydney meeting
+- \[2024.03.02\]  The 1st place in the Technical Committee on Architectural Acoustics student paper award for the December Sydney meeting
 
 
-## Journal & Conference
+## Publications
 #### International Conferences
 - **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," Program of the 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
 
