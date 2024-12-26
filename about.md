@@ -3,7 +3,7 @@ layout: single
 title: "About"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2024-12-26 16:45"  # 마지막 수정 날짜.
+last_modified_at: "2024-12-26 16:50"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -65,7 +65,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 - **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. (Accepted, To be presented)
 <!-- [link](){:target="_blank"} -->
 
-- **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," Program of the 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
+- **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," The 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
 
 - Dongheon Lee, **<U>Dayun Choi</U>**, and Jung-Woo Choi*, "DeFT-AN RT: Real-time Multichannel Speech Enhancement using Dense Frequency-Time Attentive Network and Non-overlapping Synthesis Window," Interspeech, Dublin, Ireland, Aug, 2023. [link](https://web.archive.org/web/20240128020151id_/https://www.isca-archive.org/interspeech_2023/lee23j_interspeech.pdf){:target="_blank"}
 
