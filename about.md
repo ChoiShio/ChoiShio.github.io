@@ -39,7 +39,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 #### KAIST
 - \[2024-Winter\]  \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
 - \[2024-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi) **<U>(Head)</U>**
-- \[2024-Spring\]  \[EE488\] Introduction to Audio Signal Processing & \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
+- \[2024-Spring\]  \[EE488\] Introduction to Audio Signal Processing (Lecturer: Jung-Woo Choi) & \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
 - \[2023-Winter\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi) **<U>(Head)</U>**
 - \[2023-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 - \[2023-Spring\]  \[EE305\] Introduction to Electronics Design Lab. (Lecturer: Jun-Bo Yoon)
@@ -62,7 +62,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 ## Publications
 #### International Conferences
-- **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. (Accepted, To be presented)
+- **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. (To be presented)
 <!-- [link](){:target="_blank"} -->
 
 - **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," The 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [link](https://doi.org/10.1121/10.0023494){:target="_blank"}
