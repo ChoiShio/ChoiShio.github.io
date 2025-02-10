@@ -63,19 +63,19 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 ## Publications
 #### International Conferences
-- **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. (To be presented)
+- **<U>Dayun Choi</U>**, Jung-Woo Choi, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. (To be presented)
 <!-- [paper](){:target="_blank"} -->
 
-- **<U>Dayun Choi</U>**, Jung-Woo Choi*, "Target sound extraction on reverberant mixture," The 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [paper](https://doi.org/10.1121/10.0023494){:target="_blank"}
+- **<U>Dayun Choi</U>**, Jung-Woo Choi, "Target sound extraction on reverberant mixture," The 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [paper](https://doi.org/10.1121/10.0023494){:target="_blank"}
 
-- Dongheon Lee, **<U>Dayun Choi</U>**, and Jung-Woo Choi*, "DeFT-AN RT: Real-time Multichannel Speech Enhancement using Dense Frequency-Time Attentive Network and Non-overlapping Synthesis Window," Interspeech, Dublin, Ireland, Aug, 2023. [paper](https://web.archive.org/web/20240128020151id_/https://www.isca-archive.org/interspeech_2023/lee23j_interspeech.pdf){:target="_blank"}
+- Dongheon Lee, **<U>Dayun Choi</U>**, and Jung-Woo Choi, "DeFT-AN RT: Real-time Multichannel Speech Enhancement using Dense Frequency-Time Attentive Network and Non-overlapping Synthesis Window," Interspeech, Dublin, Ireland, Aug, 2023. [paper](https://web.archive.org/web/20240128020151id_/https://www.isca-archive.org/interspeech_2023/lee23j_interspeech.pdf){:target="_blank"}
 
 #### Domestic Conferences
-- **<U>Dayun Choi</U>**, Jung-Woo Choi*, “Target sound extraction on multichannel reverberant mixture,” 2024 Fall Conference of the Acoustical Society of Korea (ASK), Busan, Korea, Oct, 2024.
+- **<U>Dayun Choi</U>**, Jung-Woo Choi, “Target sound extraction on multichannel reverberant mixture,” 2024 Fall Conference of the Acoustical Society of Korea (ASK), Busan, Korea, Oct, 2024.
 <!-- [link](https://www.ask.or.kr/){:target="_blank"} -->
 
-- **<U>Dayun Choi</U>**, Jung-Woo Choi*, “Target sound extraction on reverberant mixture using sound-class label and timestamp information,” 2024 Spring Conference of the Acoustical Society of Korea (ASK), Jeju, Korea, May, 2024.
+- **<U>Dayun Choi</U>**, Jung-Woo Choi, “Target sound extraction on reverberant mixture using sound-class label and timestamp information,” 2024 Spring Conference of the Acoustical Society of Korea (ASK), Jeju, Korea, May, 2024.
 <!-- [link](https://www.ask.or.kr/){:target="_blank"} -->
 
-- **<U>Dayun Choi</U>**, Dongheon Lee, Jung-Woo Choi*, "Low Complexity DNN Model for Multichannel Speech Enhancement," 2023 Spring Conference of the Korean Society of Noise and Vibration Engineering (KSNVE), Samcheok, Korea, May, 2023.
+- **<U>Dayun Choi</U>**, Dongheon Lee, Jung-Woo Choi, "Low Complexity DNN Model for Multichannel Speech Enhancement," 2023 Spring Conference of the Korean Society of Noise and Vibration Engineering (KSNVE), Samcheok, Korea, May, 2023.
 <!-- [link](https://conf.ksnve.or.kr/2023s/){:target="_blank"} -->
