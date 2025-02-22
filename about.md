@@ -3,7 +3,7 @@ layout: single
 title: "About"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2025-02-17 21:00"  # 마지막 수정 날짜.
+last_modified_at: "2025-02-22 22:00"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -12,7 +12,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 
 ## Education
-- \[2022.03 ~ now\]      M.S. & Ph.D. integrated course student in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
+- \[2022.03 ~ present\]      M.S. & Ph.D. integrated course student in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
 - \[2018.03 ~ 2022.02\]  B.S. in Electronic Engineering at Sogang University (_Summa Cum Laude_)
 <!-- - \[2014.03 ~ 2017.02\]  Sewon Highschool -->
 
@@ -37,10 +37,10 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 ## Assistantships
 #### KAIST
-- \[2025-Spring ~ now\]  **<U>Lab Head</U>** of Smart Sound Systems Lab
-- \[2024-Winter\]  \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
+- \[2025-Spring ~ present\]  **<U>Lab Head</U>** of Smart Sound Systems Lab
+- \[2024-Winter\]  \[EE495\] Individual Study (Lecturer: Jung-Woo Choi) **<U>(Head TA)</U>**
 - \[2024-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi) **<U>(Head TA)</U>**
-- \[2024-Spring\]  \[EE488\] Introduction to Audio Signal Processing (Lecturer: Jung-Woo Choi) & \[EE495\] Individual Study (Lecturer: Jung-Woo Choi)
+- \[2024-Spring\]  \[EE488\] Introduction to Audio Signal Processing (Lecturer: Jung-Woo Choi) & \[EE495\] Individual Study (Lecturer: Jung-Woo Choi) **<U>(Head TA)</U>**
 - \[2023-Winter\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi) **<U>(Head TA)</U>**
 - \[2023-Fall\]  \[EE202\] Signals and Systems (Lecturer: Jung-Woo Choi)
 - \[2023-Spring\]  \[EE305\] Introduction to Electronics Design Lab. (Lecturer: Jun-Bo Yoon)
