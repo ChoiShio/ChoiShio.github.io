@@ -3,7 +3,7 @@ layout: single
 title: "About"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2025-02-22 22:00"  # 마지막 수정 날짜.
+last_modified_at: "2025-04-04 01:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -12,7 +12,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 
 ## Education
-- \[2022.03 ~ present\]      M.S. & Ph.D. integrated course student in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
+- \[2022.03 ~ present\]  M.S. & Ph.D. integrated course student in Electrical Engineering at Korea Advanced Institute of Science and Technology (KAIST)
 - \[2018.03 ~ 2022.02\]  B.S. in Electronic Engineering at Sogang University (_Summa Cum Laude_)
 <!-- - \[2014.03 ~ 2017.02\]  Sewon Highschool -->
 
@@ -63,8 +63,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 ## Publications
 #### International Conferences
-- **<U>Dayun Choi</U>**, Jung-Woo Choi, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. (To be presented)
-<!-- [paper](){:target="_blank"} -->
+- **<U>Dayun Choi</U>**, Jung-Woo Choi, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. [paper](https://ieeexplore.ieee.org/abstract/document/10890145){:target="_blank"}
 
 - **<U>Dayun Choi</U>**, Jung-Woo Choi, "Target sound extraction on reverberant mixture," The 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [paper](https://doi.org/10.1121/10.0023494){:target="_blank"}
 
