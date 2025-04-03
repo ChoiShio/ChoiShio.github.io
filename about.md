@@ -63,7 +63,7 @@ E-mail : cdy3773@kaist.ac.kr, cdy1109@gmail.com
 
 ## Publications
 #### International Conferences
-- **<U>Dayun Choi</U>**, Jung-Woo Choi, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. [paper](https://ieeexplore.ieee.org/abstract/document/10890145){:target="_blank"}
+- **<U>Dayun Choi</U>**, Jung-Woo Choi, "Multichannel-to-Multichannel Target Sound Extraction Using Direction and Timestamp Clues," IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), Hyderabad, India, Apr, 2025. [paper](https://doi.org/10.1109/ICASSP49660.2025.10890145){:target="_blank"} [demo](https://choishio.github.io/demo_M2M-TSE/){:target="_blank"}
 
 - **<U>Dayun Choi</U>**, Jung-Woo Choi, "Target sound extraction on reverberant mixture," The 185th Meeting of the Acoustical Society of America (Acoustics 2023), Sydney, Australia, Dec, 2023. [paper](https://doi.org/10.1121/10.0023494){:target="_blank"}
 
