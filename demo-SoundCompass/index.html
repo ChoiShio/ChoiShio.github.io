@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundCompass: Navigating Target Sound Extraction with Effective Directional Clue Integration in Complex Acoustic Scenes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', 'Helvetica Neue';
+            margin: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .author {
+            text-align: center;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+        }
+        .affiliation {
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0 10px 0;
+            font-style: italic;
+        }
+        .e-mail {
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0 20px 0;
+        }
+        .paper_link {
+            text-align: center;
+            font-size: 20px;
+            margin: 10px 0 20px 0;
+        }
+        .section_title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 70px 0 20px 0;
+        }
+        .section_exp {
+            text-align: center;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        .abstract {
+            text-align: justify;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .big_img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 1px;
+            background-color: #f2f2f2;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .content {
+            /* border-top: 2px solid #72A0C1; */
+            padding-top: 10px;
+            margin: 20px 0 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+        }
+        .dataset-name {
+            border-top: 6px solid #72A0C1;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 22px;
+            padding: 10px 0 10px 0;
+        }
+        .sub-name {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 18px;
+            padding: 10px 0 10px 0;
+        }
+        .direct-name {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+            font-size: 18px;
+            padding: 10px 0 10px 0;
+        }
+        .sample {
+            flex: 0 0 calc(20% - 20px);
+            box-sizing: border-box;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-width: 2px;
+            text-align: center;
+        }
+        .content-5col {
+            justify-content: center; /* 5개씩 자연스럽게 배치 */
+        }
+        .content-4col {
+            justify-content: center; /* 한 줄에 4개 배치 */
+        }
+        .content-3col {
+            justify-content: center; /* 한 줄에 3개 배치 */
+        }
+        .content-2col {
+            justify-content: center; /* 한 줄에 2개 배치 */
+        }
+        .content-1col {
+            justify-content: center; /* 한 줄에 1개 배치 */
+        }
+        .white-border {
+            border-color: white;
+            border-width: 2px;
+        }
+        .first-border {
+            border-color: #000000;
+            border-width: 2px;
+            background-color: #d9d9d9;
+        }
+        .second-border {
+            border-color: #003366;
+            border-width: 2px;
+            background-color: #c6dbef;
+        }
+        .third-border {
+            border-color: #800000;
+            border-width: 2px;
+            background-color: #f4cccc;
+        }
+        .fourth-border {
+            border-color: #006400;
+            border-width: 2px;
+            background-color: #d9ead3;
+        }
+        .fifth-border {
+            border-color: #4b0082;
+            border-width: 2px;
+            background-color: #e6ccff;
+        }
+        .data_title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .data_exp {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sample img {
+            max-width: 100%;
+            height: auto;
+        }
+        .sample audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+	    .figure img {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        .spectrogram img {
+            height: 200px;
+            display: center;
+            margin: 0 auto;
+        }
+        .audio-control {
+            text-align: center;
+        }
+    	.download-icon {
+            font-size: 14pt;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            display: inline-block;
+        }
+    </style>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- <h1><span style="font-size: 1.3em;">Paired Complex Injection</span>: <br> Effective Directional Clue Integration <br> for Target Sound Extraction in Complex Acoustic Scenes</h1> -->
+            <h1><span style="font-size: 1.35em;">SoundCompass</span>: Navigating Target Sound Extraction with <br> Effective Directional Clue Integration in Complex Acoustic Scenes</h1>
+        </header>
+        <p class="author"> <b>Dayun Choi</b> and <b>Jung-Woo Choi</b></p>
+        <p class="affiliation">School of Electrical Engineering, KAIST, Daejeon, Republic of Korea</p>
+        <p class="e-mail"> {cdy3773, jwoo}@kaist.ac.kr </p>
+        <!-- <p class="paper_link"> <a href="https://ieeexplore.ieee.org/abstract/document/10890145" target="_blank">Paper Link (TBA)</a></p> -->
+        <p class="section_title">Abstract</p>
+        <div style="max-width: 600px; margin: 0 auto; text-align: justify;">
+            Recent advances in target sound extraction (TSE) utilize directional clues derived from direction of arrival (DoA), which represent an inherent spatial property of sound available in any acoustic scene.
+            However, previous DoA-based methods rely on hand-crafted features or discrete encodings, which lose fine-grained spatial information and limit adaptability.
+            We propose SoundCompass, an effective directional clue integration framework centered on a Spectral Pairwise INteraction (SPIN) module that captures cross-channel spatial correlations in the complex spectrogram domain to preserve full spatial information in multichannel signals.
+            The input feature expressed in terms of spatial correlations is fused with a DoA clue represented as spherical harmonics (SH) encoding.
+            The fusion is carried out across overlapping frequency subbands, inheriting the benefits reported in the previous band-split architectures.
+            We also incorporate the iterative refinement strategy, chain-of-inference (CoI), in the TSE framework, which recursively fuses DoA with sound event activation estimated from the previous inference stage.
+            Experiments demonstrate that the proposed SPIN and SH clue integration framework, combined with CoI, robustly extracts target sources across diverse signal classes and spatial configurations.
+        </div>
+        
+        <p class="section_title">Model Architecture</p>
+        <div class="figure_model_overall">
+            <CENTER>
+            <img src="./fig_paper/model_overall.jpg" alt="overall_architecture" width="1100" height="600">
+            </CENTER>
+        </div>
+        <div style="max-width: 1000px; margin: 0 auto; text-align: justify;">
+            <b>Fig. 1</b>. <b>(a)</b> Overall architecture of SoundCompass for DoA-based target sound extraction and <b>(b)</b> details of a fusion module including a Spectral Pairwise INteraction (SPIN) module and integrating directional clue by feature-wise linear modulation (FiLM) for $K$ subbands.
+        </div>
+
+        <p style="margin-bottom: 30px;"></p>
+        <div class="figure_model_iterative">
+            <CENTER>
+            <img src="./fig_paper/model_iterative.jpg" alt="CoI_architecture" width="700" height="290">
+            </CENTER>
+        </div>
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <b>Fig. 2</b>. Details of iterative refinement.
+        </div>
+        
+        <p class="section_title">Performance Comparisons</p>
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <b>Table. 1</b>. Performance comparisons across models and structural variations of the proposed methods.
+        </div>
+        <div class="figure_result1">
+            <CENTER>
+            <img src="./fig_paper/result.png" alt="experimental result" width="1000" height="340">
+            </CENTER>
+        </div>
+        
+        <p class="section_title">t-SNE Trajectories</p>
+        <div class="figure_result2">
+            <CENTER>
+            <img src="./fig_paper/tsne_trajectory.png" alt="tSNE trajectories" width="800" height="530">
+            </CENTER>
+        </div>
+        <div style="max-width: 700px; margin: 0 auto; text-align: justify;">
+            <b>Fig. 3</b>. The t-SNE trajectories of the FiLM scale ($\gamma$) parameters across three subbands, with respect to azimuth (top, for 5 fixed elevations) and elevation (bottom, for 5 fixed azimuths).
+        </div>
+        
+        <p class="section_title">Three Audio Samples</p>
+        <p class="section_exp">Click a toggle to listen to samples. <br> All spectograms are the first channel of microphone array. </p>
+
+        <!-- The first data -->
+        <details open>
+            <summary class="dataset-name">Sample #1</summary>
+            <p class="section_exp">Extraction of each audio from the mixture including <b>4 sources</b></p>
+            <p class="sub-name">SI-SNRi Contour Maps</p>
+            <div class="figure_result3">
+                <CENTER>
+                <img src="./sample_150/sample_contour.png" alt="SI-SNRi contour maps" width="600" height="280">
+                </CENTER>
+            </div>
+            
+            <p class="sub-name">Input Mixture and Sum of Direct/Reverb Components from Direct/Reverb Audio Decoder</p>
+            <!-- Input Mixture -->
+            <div class="content content-1col">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./sample_150/mix.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./sample_150/mix.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Ground truth -->
+            <div class="content content-4col">
+                <div class="sample first-border">
+                    <div class="data_title">Source 1 <br> ($\theta=$116°, $\phi=$130°) <br> Ground truth</div>
+                    <img src="./sample_150/src0_gt.png" alt="GT of source 1">
+                    <audio controls>
+                        <source src="./sample_150/src0_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample second-border">
+                    <div class="data_title">Source 2 <br> ($\theta=$89°, $\phi=$77°) <br> Ground truth</div>
+                    <img src="./sample_150/src1_gt.png" alt="GT of source 2">
+                    <audio controls>
+                        <source src="./sample_150/src1_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample third-border">
+                    <div class="data_title">Source 3 <br> ($\theta=$63°, $\phi=$60°) <br> Ground truth</div>
+                    <img src="./sample_150/src2_gt.png" alt="GT of source 3">
+                    <audio controls>
+                        <source src="./sample_150/src2_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fourth-border">
+                    <div class="data_title">Source 4 <br> ($\theta=$77°, $\phi=$273°) <br> Ground truth</div>
+                    <img src="./sample_150/src3_gt.png" alt="GT of source 4">
+                    <audio controls>
+                        <source src="./sample_150/src3_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <!-- Estimation -->
+            <div class="content content-4col">
+                <div class="sample first-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_150/src0_est.png" alt="EST of source 1">
+                    <audio controls>
+                        <source src="./sample_150/src0_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample second-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_150/src1_est.png" alt="EST of source 2">
+                    <audio controls>
+                        <source src="./sample_150/src1_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample third-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_150/src2_est.png" alt="EST of source 3">
+                    <audio controls>
+                        <source src="./sample_150/src2_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fourth-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_150/src3_est.png" alt="EST of source 4">
+                    <audio controls>
+                        <source src="./sample_150/src3_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <details>
+                    <summary class="direct-name">Direct Components of Above Samples from Direct Audio Decoder</summary>
+                    <!-- Ground truth (direct) -->
+                    <div class="content content-4col">
+                        <div class="sample first-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_150/src0_gt_direct.png" alt="GT of source 1">
+                            <audio controls>
+                                <source src="./sample_150/src0_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample second-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_150/src1_gt_direct.png" alt="GT of source 2">
+                            <audio controls>
+                                <source src="./sample_150/src1_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample third-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_150/src2_gt_direct.png" alt="GT of source 3">
+                            <audio controls>
+                                <source src="./sample_150/src2_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fourth-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_150/src3_gt_direct.png" alt="GT of source 4">
+                            <audio controls>
+                                <source src="./sample_150/src3_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <!-- Estimation (direct) -->
+                    <div class="content content-4col">
+                        <div class="sample first-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_150/src0_est_direct.png" alt="EST of source 1">
+                            <audio controls>
+                                <source src="./sample_150/src0_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample second-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_150/src1_est_direct.png" alt="EST of source 2">
+                            <audio controls>
+                                <source src="./sample_150/src1_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample third-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_150/src2_est_direct.png" alt="EST of source 3">
+                            <audio controls>
+                                <source src="./sample_150/src2_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fourth-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_150/src3_est_direct.png" alt="EST of source 4">
+                            <audio controls>
+                                <source src="./sample_150/src3_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </details>
+
+        <!-- The second data -->
+        <details>
+            <summary class="dataset-name">Sample #2</summary>
+            <p class="section_exp">Extraction of each audio from the mixture including <b>5 sources</b></p>
+            <p class="sub-name">SI-SNRi Contour Maps</p>
+            <div class="figure_result3">
+                <CENTER>
+                <img src="./sample_420/sample_contour.png" alt="SI-SNRi contour maps" width="600" height="280">
+                </CENTER>
+            </div>
+            
+            <p class="sub-name">Input Mixture and Sum of Direct/Reverb Components from Direct/Reverb Audio Decoder</p>
+            <!-- Input Mixture -->
+            <div class="content content-1col">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./sample_420/mix.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./sample_420/mix.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Ground truth -->
+            <div class="content content-4col">
+                <div class="sample first-border">
+                    <div class="data_title">Source 1 <br> ($\theta=$105°, $\phi=$334°) <br> Ground truth</div>
+                    <img src="./sample_420/src0_gt.png" alt="GT of source 1">
+                    <audio controls>
+                        <source src="./sample_420/src0_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample second-border">
+                    <div class="data_title">Source 2 <br> ($\theta=$55°, $\phi=$41°) <br> Ground truth</div>
+                    <img src="./sample_420/src1_gt.png" alt="GT of source 2">
+                    <audio controls>
+                        <source src="./sample_420/src1_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample third-border">
+                    <div class="data_title">Source 3 <br> ($\theta=$85°, $\phi=$330°) <br> Ground truth</div>
+                    <img src="./sample_420/src2_gt.png" alt="GT of source 3">
+                    <audio controls>
+                        <source src="./sample_420/src2_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fourth-border">
+                    <div class="data_title">Source 4 <br> ($\theta=$72°, $\phi=$155°) <br> Ground truth</div>
+                    <img src="./sample_420/src3_gt.png" alt="GT of source 4">
+                    <audio controls>
+                        <source src="./sample_420/src3_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fifth-border">
+                    <div class="data_title">Source 4 <br> ($\theta=$96°, $\phi=$197°) <br> Ground truth</div>
+                    <img src="./sample_420/src4_gt.png" alt="GT of source 5">
+                    <audio controls>
+                        <source src="./sample_420/src4_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <!-- Estimation -->
+            <div class="content content-4col">
+                <div class="sample first-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_420/src0_est.png" alt="EST of source 1">
+                    <audio controls>
+                        <source src="./sample_420/src0_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample second-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_420/src1_est.png" alt="EST of source 2">
+                    <audio controls>
+                        <source src="./sample_420/src1_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample third-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_420/src2_est.png" alt="EST of source 3">
+                    <audio controls>
+                        <source src="./sample_420/src2_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fourth-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_420/src3_est.png" alt="EST of source 4">
+                    <audio controls>
+                        <source src="./sample_420/src3_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fifth-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_420/src4_est.png" alt="EST of source 5">
+                    <audio controls>
+                        <source src="./sample_420/src4_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <details>
+                    <summary class="direct-name">Direct Components of Above Samples from Direct Audio Decoder</summary>
+                    <!-- Ground truth (direct) -->
+                    <div class="content content-4col">
+                        <div class="sample first-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_420/src0_gt_direct.png" alt="GT of source 1">
+                            <audio controls>
+                                <source src="./sample_420/src0_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample second-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_420/src1_gt_direct.png" alt="GT of source 2">
+                            <audio controls>
+                                <source src="./sample_420/src1_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample third-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_420/src2_gt_direct.png" alt="GT of source 3">
+                            <audio controls>
+                                <source src="./sample_420/src2_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fourth-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_420/src3_gt_direct.png" alt="GT of source 4">
+                            <audio controls>
+                                <source src="./sample_420/src3_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fifth-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_420/src4_gt_direct.png" alt="GT of source 5">
+                            <audio controls>
+                                <source src="./sample_420/src4_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <!-- Estimation (direct) -->
+                    <div class="content content-4col">
+                        <div class="sample first-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_420/src0_est_direct.png" alt="EST of source 1">
+                            <audio controls>
+                                <source src="./sample_420/src0_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample second-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_420/src1_est_direct.png" alt="EST of source 2">
+                            <audio controls>
+                                <source src="./sample_420/src1_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample third-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_420/src2_est_direct.png" alt="EST of source 3">
+                            <audio controls>
+                                <source src="./sample_420/src2_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fourth-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_420/src3_est_direct.png" alt="EST of source 4">
+                            <audio controls>
+                                <source src="./sample_420/src3_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fifth-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_420/src4_est_direct.png" alt="EST of source 5">
+                            <audio controls>
+                                <source src="./sample_420/src4_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </details>
+
+        <!-- The third data -->
+        <details>
+            <summary class="dataset-name">Sample #3</summary>
+            <p class="section_exp">Extraction of each audio from the mixture including <b>5 sources</b></p>
+            <p class="sub-name">SI-SNRi Contour Maps</p>
+            <div class="figure_result3">
+                <CENTER>
+                <img src="./sample_590/sample_contour.png" alt="SI-SNRi contour maps" width="600" height="280">
+                </CENTER>
+            </div>
+            
+            <p class="sub-name">Input Mixture and Sum of Direct/Reverb Components from Direct/Reverb Audio Decoder</p>
+            <!-- Input Mixture -->
+            <div class="content content-1col">
+                <div class="sample">
+                    <div class="data_title">Input Mixture</div>
+                    <img src="./sample_590/mix.png" alt="Input Mixture">
+                    <audio controls>
+                        <source src="./sample_590/mix.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Ground truth -->
+            <div class="content content-4col">
+                <div class="sample first-border">
+                    <div class="data_title">Source 1 <br> ($\theta=$80°, $\phi=$315°) <br> Ground truth</div>
+                    <img src="./sample_590/src0_gt.png" alt="GT of source 1">
+                    <audio controls>
+                        <source src="./sample_590/src0_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample second-border">
+                    <div class="data_title">Source 2 <br> ($\theta=$75°, $\phi=$47°) <br> Ground truth</div>
+                    <img src="./sample_590/src1_gt.png" alt="GT of source 2">
+                    <audio controls>
+                        <source src="./sample_590/src1_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample third-border">
+                    <div class="data_title">Source 3 <br> ($\theta=$100°, $\phi=$131°) <br> Ground truth</div>
+                    <img src="./sample_590/src2_gt.png" alt="GT of source 3">
+                    <audio controls>
+                        <source src="./sample_590/src2_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fourth-border">
+                    <div class="data_title">Source 4 <br> ($\theta=$130°, $\phi=$248°) <br> Ground truth</div>
+                    <img src="./sample_590/src3_gt.png" alt="GT of source 4">
+                    <audio controls>
+                        <source src="./sample_590/src3_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fifth-border">
+                    <div class="data_title">Source 4 <br> ($\theta=$75°, $\phi=$118°) <br> Ground truth</div>
+                    <img src="./sample_590/src4_gt.png" alt="GT of source 5">
+                    <audio controls>
+                        <source src="./sample_590/src4_gt.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            
+            <!-- Estimation -->
+            <div class="content content-4col">
+                <div class="sample first-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_590/src0_est.png" alt="EST of source 1">
+                    <audio controls>
+                        <source src="./sample_590/src0_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample second-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_590/src1_est.png" alt="EST of source 2">
+                    <audio controls>
+                        <source src="./sample_590/src1_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample third-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_590/src2_est.png" alt="EST of source 3">
+                    <audio controls>
+                        <source src="./sample_590/src2_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fourth-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_590/src3_est.png" alt="EST of source 4">
+                    <audio controls>
+                        <source src="./sample_590/src3_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="sample fifth-border">
+                    <div class="data_title">Estimation</div>
+                    <img src="./sample_590/src4_est.png" alt="EST of source 5">
+                    <audio controls>
+                        <source src="./sample_590/src4_est.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <details>
+                    <summary class="direct-name">Direct Components of Above Samples from Direct Audio Decoder</summary>
+                    <!-- Ground truth (direct) -->
+                    <div class="content content-4col">
+                        <div class="sample first-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_590/src0_gt_direct.png" alt="GT of source 1">
+                            <audio controls>
+                                <source src="./sample_590/src0_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample second-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_590/src1_gt_direct.png" alt="GT of source 2">
+                            <audio controls>
+                                <source src="./sample_590/src1_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample third-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_590/src2_gt_direct.png" alt="GT of source 3">
+                            <audio controls>
+                                <source src="./sample_590/src2_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fourth-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_590/src3_gt_direct.png" alt="GT of source 4">
+                            <audio controls>
+                                <source src="./sample_590/src3_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fifth-border">
+                            <div class="data_title">Ground truth (direct)</div>
+                            <img src="./sample_590/src4_gt_direct.png" alt="GT of source 5">
+                            <audio controls>
+                                <source src="./sample_590/src4_gt_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    <!-- Estimation (direct) -->
+                    <div class="content content-4col">
+                        <div class="sample first-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_590/src0_est_direct.png" alt="EST of source 1">
+                            <audio controls>
+                                <source src="./sample_590/src0_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample second-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_590/src1_est_direct.png" alt="EST of source 2">
+                            <audio controls>
+                                <source src="./sample_590/src1_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample third-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_590/src2_est_direct.png" alt="EST of source 3">
+                            <audio controls>
+                                <source src="./sample_590/src2_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fourth-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_590/src3_est_direct.png" alt="EST of source 4">
+                            <audio controls>
+                                <source src="./sample_590/src3_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                        <div class="sample fifth-border">
+                            <div class="data_title">Estimation (direct)</div>
+                            <img src="./sample_590/src4_est_direct.png" alt="EST of source 5">
+                            <audio controls>
+                                <source src="./sample_590/src4_est_direct.wav" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </details>
+
+        <div class="dataset-name">
+
+        </div>
+
+        <footer>
+            <p>&copy; <a href="https://www.sound.kaist.ac.kr/" target="_blank">Smart Sound System Lab.</a></p>
+        </footer>
+    </div>
+</body>
+</html>
