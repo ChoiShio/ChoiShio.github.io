@@ -27,7 +27,7 @@ You can scroll through my CV below and click links inside:
 
   if (isMobile) {
     container.innerHTML = `
-      <iframe src="/assets/pdfjs/web/viewer.html?file=../pdf/CV_Dayun_Choi.pdf"
+      <iframe src="/assets/pdfjs/web/viewer.html?file=https://choishio.github.io/assets/pdf/CV_Dayun_Choi.pdf"
               width="100%" height="800px" style="border:1px solid #ccc;"></iframe>`;
   } else {
     container.innerHTML = `
