@@ -11,30 +11,19 @@ comments: false
 E-mail : cdy3773@kaist.ac.kr | cdy1109@gmail.com
 
 
-<style>
-/* PC: 기본 PDF iframe 표시 */
-.pc-only { display: block; }
-.mobile-only { display: none; }
+<div id="cv-container"></div>
 
-/* 모바일 화면일 때는 PDF.js 뷰어만 표시 */
-@media screen and (max-width: 1024px) {
-  .pc-only { display: none; }
-  .mobile-only { display: block; }
-}
-</style>
+<script>
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const container = document.getElementById("cv-container");
 
-You can scroll through my CV below and click links inside:
-
-<!-- 기본 PDF embed (PC 전용) -->
-<div class="cv-pdf pc-only">
-  <iframe src="/assets/pdf/CV_Dayun_Choi.pdf" 
-          width="100%" height="800px"
-          style="border:1px solid #ccc;" allowfullscreen></iframe>
-</div>
-
-<!-- PDF.js embed (모바일 전용) -->
-<div class="cv-pdf mobile-only">
-  <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=/assets/pdf/CV_Dayun_Choi.pdf"
-          width="100%" height="800px"
-          style="border:1px solid #ccc;"></iframe>
-</div>
+  if (isMobile) {
+    container.innerHTML = `
+      <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=/assets/pdf/CV_Dayun_Choi.pdf"
+              width="100%" height="800px" style="border:1px solid #ccc;"></iframe>`;
+  } else {
+    container.innerHTML = `
+      <iframe src="/assets/pdf/CV_Dayun_Choi.pdf"
+              width="100%" height="800px" style="border:1px solid #ccc;" allowfullscreen></iframe>`;
+  }
+</script>
