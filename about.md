@@ -19,7 +19,7 @@ E-mail : cdy3773@kaist.ac.kr | cdy1109@gmail.com
 
   if (isMobile) {
     container.innerHTML = `
-      <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://choishio.github.io/ChoiShio.github.io/assets/pdf/CV_Dayun_Choi.pdf"
+      <iframe src="/assets/pdfjs/web/viewer.html?file=/assets/pdf/CV_Dayun_Choi.pdf"
               width="100%" height="800px" style="border:1px solid #ccc;"></iframe>`;
   } else {
     container.innerHTML = `
