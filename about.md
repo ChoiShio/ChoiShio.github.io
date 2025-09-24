@@ -16,8 +16,8 @@ E-mail : cdy3773@kaist.ac.kr | cdy1109@gmail.com
 .pc-only { display: block; }
 .mobile-only { display: none; }
 
-/* 모바일 화면 (768px 이하)일 때는 PDF.js 뷰어만 표시 */
-@media screen and (max-width: 768px) {
+/* 모바일 화면일 때는 PDF.js 뷰어만 표시 */
+@media screen and (max-width: 1024px) {
   .pc-only { display: none; }
   .mobile-only { display: block; }
 }
@@ -28,15 +28,13 @@ You can scroll through my CV below and click links inside:
 <!-- 기본 PDF embed (PC 전용) -->
 <div class="cv-pdf pc-only">
   <iframe src="/assets/pdf/CV_Dayun_Choi.pdf" 
-          width="100%" 
-          height="800px" 
-          style="border:1px solid #ccc;" 
-          allowfullscreen>
-  </iframe>
+          width="100%" height="800px"
+          style="border:1px solid #ccc;" allowfullscreen></iframe>
 </div>
 
 <!-- PDF.js embed (모바일 전용) -->
 <div class="cv-pdf mobile-only">
   <iframe src="https://mozilla.github.io/pdf.js/web/viewer.html?file=/assets/pdf/CV_Dayun_Choi.pdf"
-          width="100%" height="800px" style="border:1px solid #ccc;"></iframe>
+          width="100%" height="800px"
+          style="border:1px solid #ccc;"></iframe>
 </div>
