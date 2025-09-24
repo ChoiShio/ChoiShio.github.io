@@ -20,19 +20,11 @@ E-mail : cdy3773@kaist.ac.kr | cdy1109@gmail.com
 ## Curriculum Vitae
 You can scroll through my CV below and click links inside:
 
-<div id="cv-container"></div>
-
-<script>
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  const container = document.getElementById("cv-container");
-
-  if (isMobile) {
-    container.innerHTML = `
-      <iframe src="/assets/pdfjs/web/viewer.html?file=../../pdf/CV_Dayun_Choi.pdf"
-              width="100%" height="800px" style="border:1px solid #ccc;"></iframe>`;
-  } else {
-    container.innerHTML = `
-      <iframe src="/assets/pdf/CV_Dayun_Choi.pdf"
-              width="100%" height="800px" style="border:1px solid #ccc;" allowfullscreen></iframe>`;
-  }
-</script>
+<div style="width:100%; height:800px;">
+  <iframe src="/assets/pdf/CV_Dayun_Choi.pdf" 
+          width="100%" 
+          height="100%" 
+          style="border:1px solid #ccc;" 
+          allowfullscreen>
+  </iframe>
+</div>
