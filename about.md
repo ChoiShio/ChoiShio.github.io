@@ -21,9 +21,10 @@ E-mail : cdy3773@kaist.ac.kr | cdy1109@gmail.com
 You can scroll through my CV below and click links inside:
 
 <div style="width:100%; height:800px;">
-  <iframe 
-    src="https://choishio.github.io/assets/pdfjs/web/viewer.html?file=https://choishio.github.io/assets/pdf/CV_Dayun_Choi.pdf"
-    width="100%" height="100%"
-    style="border:1px solid #ccc;">
+  <iframe src="/assets/pdf/CV_Dayun_Choi.pdf" 
+          width="100%" 
+          height="100%" 
+          style="border:1px solid #ccc;" 
+          allowfullscreen>
   </iframe>
 </div>
