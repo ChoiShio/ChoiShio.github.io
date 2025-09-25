@@ -20,6 +20,8 @@ E-mail : cdy3773@kaist.ac.kr | cdy1109@gmail.com
 ## Curriculum Vitae
 You can scroll or download my CV below and click links inside:
 
+<a href="/assets/pdf/CV_Dayun_Choi.pdf" target="_blank">View my CV (PDF)</a>
+
 <div style="width:100%; height:800px;">
   <iframe src="/assets/pdf/CV_Dayun_Choi.pdf" 
           width="100%" 
