@@ -110,7 +110,7 @@ author:
   location         : "Daejeon, Republic of Korea"
   email            : 
   links:
-    - label: "Smart Sound Systems Lab"
+    - label: "Smart Sound Lab"
       icon: "fas fa-fw fa-link"
       url: "https://www.sound.kaist.ac.kr/"
     - label: "E-mail"
@@ -135,7 +135,7 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Smart Sound Systems Lab"
+    - label: "Smart Sound Lab"
       icon: "fas fa-fw fa-link"
       url: "https://www.sound.kaist.ac.kr/"
     - label: "E-mail"
