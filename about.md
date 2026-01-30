@@ -7,14 +7,12 @@ last_modified_at: "2026-01-30 17:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
----
-
 최다윤 (Dayun Choi)  
 E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com](mailto:cdy1109@gmail.com)
 
 ---
 
-## Education
+## <span style="color:#4FC3F7;">Education</span>
 
 #### KAIST (Korea Advanced Institute of Science and Technology)
 *Master’s and PhD Integrated Course Student, School of Electrical Engineering*
@@ -33,7 +31,7 @@ Mar 2018 – Feb 2022
 
 ---
 
-## Assistantships
+## <span style="color:#4FC3F7;">Assistantships</span>
 
 #### KAIST
 - \[Summer, 2025\] \[EE495\] Individual Study (*Advisor: Prof. Jung-Woo Choi*)
@@ -48,7 +46,7 @@ Mar 2018 – Feb 2022
 
 ---
 
-## Honors & Awards
+## <span style="color:#4FC3F7;">Honors & Awards</span>
 
 #### KAIST
 - \[Mar 2nd, 2024\] **The 1st place** at Technical Committee on Architectural Acoustics Student Paper Award for December Sydney meeting
@@ -63,7 +61,7 @@ Mar 2018 – Feb 2022
 
 ---
 
-## Experiences
+## <span style="color:#4FC3F7;">Experiences</span>
 
 #### KAIST
 - \[Jun 18th, 2024\] **Representative Presenter (Oral)** of Smart Sound Lab for KAIST-NUS Joint Seminar
@@ -77,7 +75,7 @@ Mar 2018 – Feb 2022
 
 ---
 
-## Skills
+## <span style="color:#4FC3F7;">Skills</span>
 
 #### Programming Languages
 - Python, Matlab (*Advanced*)
