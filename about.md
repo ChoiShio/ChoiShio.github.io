@@ -3,7 +3,7 @@ layout: single
 title: "About"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2026-01-30 17:30"  # 마지막 수정 날짜.
+last_modified_at: "2026-01-30 17:50"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -14,11 +14,11 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 
 ## <span style="color:#4FC3F7;">Education</span>
 
-#### KAIST (Korea Advanced Institute of Science and Technology)
-*Master’s and PhD Integrated Course Student, School of Electrical Engineering*
+#### KAIST (Korea Advanced Institute of Science and Technology)  
+*Master’s and PhD Integrated Course Student, School of Electrical Engineering*  
 Mar 2022 – Present
 - Advisor: Prof. Jung-Woo Choi
-- Research Assistant, [Smart Sound Lab](https://www.sound.kaist.ac.kr/)
+- Research Assistant at [Smart Sound Lab](https://www.sound.kaist.ac.kr/)
 - Focus: Deep learning–based target sound extraction using spatial queries
 - GPA: 3.88 / 4.3 (95.8 / 100) - via 93 credits.
 
@@ -26,8 +26,8 @@ Mar 2022 – Present
 *B.S. in Electronic Engineering*  
 Mar 2018 – Feb 2022  
 - Advisor: Prof. Yangmo Yoo  
-- Undergraduate Intern, [Medical Imaging Computing Systems (MICS) Lab](https://mics.sogang.ac.kr/mics/)
-- GPA: 4.12 / 4.3 (98.6 / 100) - via 134 credits (*Summa Cum Laude*)
+- Undergraduate Intern at [Medical Imaging Computing Systems (MICS) Lab](https://mics.sogang.ac.kr/mics/)
+- GPA: 4.12 / 4.3 (98.6 / 100) - via 134 credits. (*Summa Cum Laude*)
 
 ---
 

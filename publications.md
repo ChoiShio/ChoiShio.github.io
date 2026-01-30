@@ -7,7 +7,7 @@ last_modified_at: "2026-01-30 17:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
-(* denotes the corresponding author)
+(* denotes the corresponding author.)
 
 ---
 
