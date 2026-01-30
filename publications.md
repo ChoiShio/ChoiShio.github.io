@@ -7,7 +7,4 @@ last_modified_at: "2026-01-30 16:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
-최다윤 (Dayun Choi)  
-E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com](mailto:cdy1109@gmail.com)
-
 (TBA)
