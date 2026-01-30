@@ -33,7 +33,7 @@ Mar 2018 – Feb 2022
 
 ## <span style="color:#4FC3F7;">Assistantships</span>
 
-#### KAIST
+#### KAIST (Korea Advanced Institute of Science and Technology)
 - \[Summer, 2025\] \[EE495\] Individual Study (*Advisor: Prof. Jung-Woo Choi*)
 - \[Spring – Winter, 2025\] **Lab Head** of Smart Sound Lab (*Advisor: Prof. Jung-Woo Choi*)
 - \[Winter, 2024\] \[EE495\] Individual Study (*Advisor: Prof. Jung-Woo Choi*)
@@ -48,7 +48,7 @@ Mar 2018 – Feb 2022
 
 ## <span style="color:#4FC3F7;">Honors & Awards</span>
 
-#### KAIST
+#### KAIST (Korea Advanced Institute of Science and Technology)
 - \[Mar 2nd, 2024\] **The 1st place** at Technical Committee on Architectural Acoustics Student Paper Award for December Sydney meeting
 
 #### Sogang University
@@ -63,7 +63,7 @@ Mar 2018 – Feb 2022
 
 ## <span style="color:#4FC3F7;">Experiences</span>
 
-#### KAIST
+#### KAIST (Korea Advanced Institute of Science and Technology)
 - \[Jun 18th, 2024\] **Representative Presenter (Oral)** of Smart Sound Lab for KAIST-NUS Joint Seminar
 - \[Apr 5th, 2024\] **Representative Presenter (Oral)** of Smart Sound Lab for the 5th SORI Workshop
 - \[Jul 13th, 2023\] **Representative Presenter (Poster)** of Smart Sound Lab for the 4th SORI Workshop 
