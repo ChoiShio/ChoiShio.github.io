@@ -2,7 +2,9 @@
 layout: single
 title: "About"
 classes: wide
-author_profile: false
+author_profile: true
+sidebar:
+  nav: "docs"
 author: Dayun Choi                    # authors.yml 파일에 존재하는 username 값
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
 last_modified_at: "2026-01-30 17:50"  # 마지막 수정 날짜.
