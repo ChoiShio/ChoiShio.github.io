@@ -33,7 +33,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/shio_choi/"
 date: "2026-01-30 16:30"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2026-01-31 16:00"  # 마지막 수정 날짜.
+last_modified_at: "2026-02-02 19:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -43,7 +43,7 @@ comments: false
 
 ## <span style="color:#4FC3F7;">Conference Proceedings</span>
 
-- **D. Choi** and J.-W. Choi&dagger;, “SoundCompass: Navigating target sound extraction with effective directional clue integration in complex acoustic scenes,” in *Proc. International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, IEEE, Barcelona, Spain, 2026, pp. 1–5. \[[Paper](https://arxiv.org/abs/2509.18561)\] \[[GitHub](https://github.com/ChoiShio/SoundCompass)\] \[[Demo](https://choishio.github.io/demo-SoundCompass/)\]
+- **D. Choi** and J.-W. Choi&dagger;, “SoundCompass: Navigating target sound extraction with effective directional clue integration in complex acoustic scenes,” in *Proc. International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, IEEE, Barcelona, Spain, 2026, pp. 1–5. \[[Paper](https://arxiv.org/abs/2509.18561)\] \[[Demo](https://choishio.github.io/demo-SoundCompass/)\]
 - **D. Choi** and J.-W. Choi&dagger;, “Multichannel-to-multichannel target sound extraction using direction and timestamp clues,” in *Proc. International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, IEEE, Hyderabad, India, 2025, pp. 1–5. \[[Paper](https://doi.org/10.1109/ICASSP49660.2025.10890145)\] \[[GitHub](https://github.com/ChoiShio/M2M-TSE)\] \[[Demo](https://choishio.github.io/demo_M2M-TSE/)\]
 - **D. Choi** and J.-W. Choi&dagger;, “Target sound extraction on multichannel reverberant mixture,” in *2024 Autumn Conference of the Acoustical Society of Korea (ASK)*, ASK, Busan, Korea, 2024, pp. 170–171.
 - **D. Choi** and J.-W. Choi&dagger;, “Target sound extraction on reverberant mixture using sound-class label and timestamp information,” in *2024 Spring Conference of the Acoustical Society of Korea (ASK)*, ASK, Jeju, Korea, 2024, pp. 335–336.
