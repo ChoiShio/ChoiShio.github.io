@@ -46,7 +46,7 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 
 #### KAIST (Korea Advanced Institute of Science and Technology)  
 *Master’s and PhD Integrated Course Student, School of Electrical Engineering*  
-Mar, 2022 – Present
+\[Mar, 2022 – Present\]
 - Advisor: Prof. Jung-Woo Choi
 - Research Assistant at [Smart Sound Lab](https://www.sound.kaist.ac.kr/)
 - Focus: Deep learning–based target sound extraction using spatial queries
@@ -54,7 +54,7 @@ Mar, 2022 – Present
 
 #### Sogang University
 *B.S. in Electronic Engineering*  
-Mar, 2018 – Feb, 2022  
+\[Mar, 2018 – Feb, 2022\]  
 - Advisor: Prof. Yangmo Yoo  
 - Undergraduate Intern at [Medical Imaging Computing Systems (MICS) Lab](https://mics.sogang.ac.kr/mics/)
 - GPA: 4.12 / 4.3 (98.6 / 100) - via 134 credits. (*Summa Cum Laude*)
