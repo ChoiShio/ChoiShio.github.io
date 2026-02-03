@@ -45,30 +45,30 @@ comments: false
 
 - "SoundCompass: Navigating Target Sound Extraction with Effective Directional Clue Integration in Complex Acoustic Scenes"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
-International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2026.   
+*International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, 2026.   
 \[[Paper](https://arxiv.org/abs/2509.18561)\] \[[Demo](https://choishio.github.io/demo-SoundCompass/)\]
 
 - "Multichannel-to-Multichannel Target Sound Extraction using Direction and Timestamp Clues"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
-International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2025.   
+*International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, 2025.   
 \[[Paper](https://doi.org/10.1109/ICASSP49660.2025.10890145)\] \[[GitHub](https://github.com/ChoiShio/M2M-TSE)\] \[[Demo](https://choishio.github.io/demo_M2M-TSE/)\]
 
 - "Target Sound Extraction on Multichannel Reverberant Mixture"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
-2024 Autumn Conference of the Acoustical Society of Korea (ASK), 2024.
+*2024 Autumn Conference of the Acoustical Society of Korea (ASK)*, 2024.
 
 - "Target Sound Extraction on Reverberant Mixture using Sound-class Label and Timestamp Information"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
-2024 Spring Conference of the Acoustical Society of Korea (ASK), 2024.
+*2024 Spring Conference of the Acoustical Society of Korea (ASK)*, 2024.
 
 - "DeFT-AN RT: Real-time Multichannel Speech Enhancement using Dense Frequency-Time Attentive Network and Non-overlapping Synthesis Window"   
 Dongheon Lee, **<U>Dayun Choi</U>**, and Jung-Woo Choi&dagger;   
-Interspeech, 2023.   
+*Interspeech*, 2023.   
 \[[Paper](https://doi.org/10.21437/Interspeech.2023-2437)\] \[[GitHub](https://github.com/donghoney0416/DeFT-AN-RT)\]
 
 - "Low Complexity DNN Model for Multichannel Speech Enhancement"   
 **<U>Dayun Choi</U>**, Dongheon Lee, and Jung-Woo Choi&dagger;   
-2023 Spring Conference of the Korean Society of Noise and Vibration Engineering (KSNVE), 2023.
+*2023 Spring Conference of the Korean Society of Noise and Vibration Engineering (KSNVE)*, 2023.
 
 ---
 
@@ -76,12 +76,12 @@ Interspeech, 2023.
 
 - "CST-former: Multidimensional Attention-based Transformer for Sound Event Localization and Detection in Real Scenes"   
 Yusun Shul, **<U>Dayun Choi</U>**, and Jung-Woo Choi&dagger;   
-arXiv preprint arXiv:2504.12870, 2025.   
+*arXiv preprint arXiv:2504.12870*, 2025.   
 \[[Paper](https://arxiv.org/abs/2504.12870)\] \[[GitHub](https://github.com/yusunnny/CST-former)\]
 
 - "Target Sound Extraction on Reverberant Mixture"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
-The Journal of the Acoustical Society of America (JASA), 2023.   
+*The Journal of the Acoustical Society of America (JASA)*, 2023.   
 \[[Paper](https://doi.org/10.1121/10.0023494)\]
 
 ---
