@@ -83,11 +83,11 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 
 #### Sogang University
 - \[Feb 21st, 2022\] Honors
-- \[Mar 30th, 2020\] Dean’s List for Electronic Engineering
+- \[Mar 30th, 2020\] **Dean’s List** for Electronic Engineering
 - \[Mar, 2020 – Feb, 2022\] National Scholarship for Science and Engineering
-- \[Mar 29th, 2019\] Dean’s List for Electronic Engineering
-- \[Nov 29th, 2018\] Dean’s List for Electronic Engineering
-- \[Nov 16th, 2018\] The 3rd Prize at the 7th Proposal Contest of General Elective Subjects
+- \[Mar 29th, 2019\] **Dean’s List** for Electronic Engineering
+- \[Nov 29th, 2018\] **Dean’s List** for Electronic Engineering
+- \[Nov 16th, 2018\] **The 3rd Prize** at the 7th Proposal Contest of General Elective Subjects
 
 ---
 
@@ -101,7 +101,7 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 #### Sogang University
 - \[Jul 19th – 30th, 2021\] The 2nd Software Pre-Education Program for Hyundai Mobis - Sogang University (FoSS)
 - \[Jun 29th – Jul 9th, 2019\] The 24th Overseas Culture Tour to Greece & Türkiye
-- \[Jan, 2019 – Feb, 2020\] Head of education and culture department of Hyunwoohoe (Classical Guitar Club)
+- \[Jan, 2019 – Feb, 2020\] **Head of education and culture department** of Hyunwoohoe (Classical Guitar Club)
 
 ---
 
