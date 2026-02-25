@@ -48,7 +48,7 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 *Master’s and PhD Integrated Course Student, School of Electrical Engineering*  
 \[Mar, 2022 – Present\]
 - Advisor: Prof. Jung-Woo Choi
-- Research Assistant at [Smart Sound Lab](https://www.sound.kaist.ac.kr/)
+- Research Assistant at [Smart Sound Lab](https://sound.kaist.ac.kr/)
 - Focus: Deep learning–based target sound extraction using spatial queries
 - GPA: 3.88 / 4.3 (95.8 / 100) - via 93 credits.
 
