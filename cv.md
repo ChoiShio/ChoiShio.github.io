@@ -33,7 +33,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/shio_choi/"
 date: "2026-01-30 16:30"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2026-01-30 17:30"  # 마지막 수정 날짜.
+last_modified_at: "2026-04-22 8:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
