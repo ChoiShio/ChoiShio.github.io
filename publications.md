@@ -46,7 +46,7 @@ comments: false
 - "SoundCompass: Navigating Target Sound Extraction with Effective Directional Clue Integration in Complex Acoustic Scenes"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
 *International Conference on Acoustics, Speech and Signal Processing (ICASSP)*, 2026.   
-\[[Paper](https://arxiv.org/abs/2509.18561)\] \[[Demo](https://choishio.github.io/demo-SoundCompass/)\]
+\[[Paper](https://doi.org/10.1109/ICASSP55912.2026.11461583)\] \[[Demo](https://choishio.github.io/demo-SoundCompass/)\]
 
 - "Multichannel-to-Multichannel Target Sound Extraction using Direction and Timestamp Clues"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
