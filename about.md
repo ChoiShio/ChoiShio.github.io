@@ -49,7 +49,7 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 \[Mar, 2022 – Present\]
 - Advisor: Prof. Jung-Woo Choi
 - Research Assistant at [Smart Sound Lab](https://sound.kaist.ac.kr/)
-- Focus: Deep learning–based target sound extraction using spatial queries
+- Focus: Deep Learning-based Target Sound Extraction on Multichannel Mixtures using Directional Queries
 - GPA: 3.88 / 4.3 (95.8 / 100) - via 93 credits.
 
 #### Sogang University
