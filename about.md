@@ -33,7 +33,7 @@ author:
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/shio_choi/"
 date: "2022-06-20 17:40"              # 최초 포스팅 날짜. 별도 정렬 순서가 없으면 이 값으로 정렬됨. 파일명에 기록되어있다면 생략 가능.
-last_modified_at: "2026-02-02 19:30"  # 마지막 수정 날짜.
+last_modified_at: "2026-07-30 14:30"  # 마지막 수정 날짜.
 comments: false
 ---
 
@@ -50,7 +50,7 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 - Advisor: Prof. Jung-Woo Choi
 - Research Assistant at [Smart Sound Lab](https://sound.kaist.ac.kr/)
 - Focus: Deep Learning-based Target Sound Extraction on Multichannel Mixtures using Directional Queries
-- GPA: 3.88 / 4.3 (95.8 / 100) - via 93 credits.
+- GPA: 3.88 / 4.3 (95.8 / 100) - via 105 credits.
 
 #### Sogang University
 *B.S. in Electronic Engineering*  
