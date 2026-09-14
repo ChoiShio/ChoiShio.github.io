@@ -65,7 +65,7 @@ E-mail : [cdy3773@kaist.ac.kr](mailto:cdy3773@kaist.ac.kr) | [cdy1109@gmail.com]
 
 #### KAIST (Korea Advanced Institute of Science and Technology)
 - \[Summer, 2025\] \[EE495\] Individual Study (*Advisor: Prof. Jung-Woo Choi*)
-- \[Spring – Winter, 2025\] **Lab Head** of Smart Sound Lab (*Advisor: Prof. Jung-Woo Choi*)
+- \[Spring – Winter, 2025\] **Lab Representative** of Smart Sound Lab (*Advisor: Prof. Jung-Woo Choi*)
 - \[Winter, 2024\] \[EE495\] Individual Study (*Advisor: Prof. Jung-Woo Choi*)
 - \[Autumn, 2024\] \[EE202\] Signals and Systems (*Lecturer: Prof. Jung-Woo Choi*) (**Head TA**)
 - \[Spring, 2024\] \[EE488\] Introduction to Audio Signal Processing (*Lecturer: Prof. Jung-Woo Choi*) (**Head TA**) & \[EE495\] Individual Study (*Advisor: Prof. Jung-Woo Choi*)
