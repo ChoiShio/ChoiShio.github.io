@@ -29,6 +29,16 @@ logo                     : # path of logo image to display in the masthead, e.g.
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
+
+# Birthday mode : 생일 당일(KST)에만 상단 배너 + 컨페티가 뜹니다. 아무 날에나 미리보기 → ?birthday=preview
+birthday:
+  enabled                : true
+  date                   : "11-09"
+  year                   : 1998
+  message                : "Today is Dayun's birthday!"
+  cta_label              : "Leave a note in the guestbook"
+  cta_url                : "/guestbook/"
+  confetti               : true
 comments                 : # "utterances"
   provider               : "utterances" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
