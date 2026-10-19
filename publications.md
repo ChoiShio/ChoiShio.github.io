@@ -81,7 +81,7 @@ Yusun Shul, **<U>Dayun Choi</U>**, and Jung-Woo Choi&dagger;
 
 - "Target Sound Extraction on Reverberant Mixture"   
 **<U>Dayun Choi</U>** and Jung-Woo Choi&dagger;   
-*The Journal of the Acoustical Society of America (JASA)*, 2023.   
+*The Journal of the Acoustical Society of America (JASA)*, 2023. (Presented at *Acoustics 2023 Sydney*)
 \[[Paper](https://doi.org/10.1121/10.0023494)\]
 
 ---
