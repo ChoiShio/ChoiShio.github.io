@@ -1,0 +1,54 @@
+{
+ "move_sim": [
+  "move_sim/sample_1007",
+  "move_sim/sample_1560",
+  "move_sim/sample_666",
+  "move_sim/sample_1628",
+  "move_sim/sample_1744",
+  "move_sim/sample_408"
+ ],
+ "move_twin": [
+  "move_twin/sample_601",
+  "move_twin/sample_269",
+  "move_twin/sample_1654",
+  "move_twin/sample_73"
+ ],
+ "move_real": [
+  "move_real/sample_601",
+  "move_real/sample_269",
+  "move_real/sample_1654",
+  "move_real/sample_73"
+ ],
+ "move_sim_10s": [
+  "move_sim_10s/sample_160",
+  "move_sim_10s/sample_187",
+  "move_sim_10s/sample_141"
+ ],
+ "move_real_10s": [
+  "move_real_10s/sample_114",
+  "move_real_10s/sample_11",
+  "move_real_10s/sample_140"
+ ],
+ "move_sim_25s": [
+  "move_sim_25s/sample_39",
+  "move_sim_25s/sample_15",
+  "move_sim_25s/sample_10"
+ ],
+ "move_real_25s": [
+  "move_real_25s/sample_114",
+  "move_real_25s/sample_116",
+  "move_real_25s/sample_122"
+ ],
+ "starss_tau": [
+  "starss_tau/fold4_room15_mix006_10s",
+  "starss_tau/fold4_room15_mix008_10s",
+  "starss_tau/fold4_room16_mix012_10s",
+  "starss_tau/fold4_room16_mix003_15s"
+ ],
+ "starss_sony": [
+  "starss_sony/fold4_room24_mix013_0s",
+  "starss_sony/fold4_room23_mix003_20s",
+  "starss_sony/fold4_room24_mix014_30s",
+  "starss_sony/fold4_room24_mix006_25s"
+ ]
+}

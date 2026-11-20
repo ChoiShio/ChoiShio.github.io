@@ -1,0 +1,141 @@
+{
+ "dir": "starss_tau/fold4_room15_mix006_10s",
+ "sec": 10.0,
+ "sources": [
+  {
+   "name": "Female speech \u00b7 source 2",
+   "gt": null
+  },
+  {
+   "name": "Female speech \u00b7 source 4",
+   "gt": null
+  },
+  {
+   "name": "Male speech \u00b7 source 3",
+   "gt": null
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.5,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 4.917859077453613
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 4.841352462768555
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 5.547342300415039
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 6.2,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 3.6677329540252686
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 6.791825294494629
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 3.0881893634796143
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 0.9,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 9.706233024597168
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 13.263304710388184
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 9.829358100891113
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 3.9,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 6.8076276779174805
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 5.135473251342773
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 4.729442596435547
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 8.1,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 5.047503471374512
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 6.877939224243164
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 5.232299327850342
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 5.2,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 9.514250755310059
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 10.812098503112793
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 10.432453155517578
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   }
+  }
+ },
+ "key": "fold4_room15_mix006_10s",
+ "label": "room15_mix006, 10 s",
+ "info": "dev-test-tau/fold4_room15_mix006, 10-20 s (mean LE 6.1\u00b0)"
+}

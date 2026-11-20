@@ -1,0 +1,207 @@
+{
+ "dir": "move_real_25s/sample_116",
+ "sec": 25.0,
+ "sources": [
+  {
+   "name": "Walk and footsteps",
+   "gt": "src0_gt"
+  },
+  {
+   "name": "Door",
+   "gt": "src1_gt"
+  },
+  {
+   "name": "Male speech",
+   "gt": "src2_gt"
+  },
+  {
+   "name": "Musical instrument",
+   "gt": "src3_gt"
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.7000000203028321,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 32.5058479309082,
+      "SI-SNRi": 18.801403045654297
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 29.013147354125977,
+      "SI-SNRi": 18.358745574951172
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 59.602394104003906,
+      "SI-SNRi": 15.665103912353516
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 4.500000017881393,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 10.82126522064209,
+      "SI-SNRi": 24.322057723999023
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 12.016915321350098,
+      "SI-SNRi": 23.763460159301758
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 3.6444249153137207,
+      "SI-SNRi": 24.778825759887695
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 14.69999926686287,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 4.284536361694336,
+      "SI-SNRi": 20.63661766052246
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 4.807555198669434,
+      "SI-SNRi": 18.780717849731445
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 10.75512981414795,
+      "SI-SNRi": 3.678711414337158
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   },
+   "3": {
+    "t_q": 4.399999836087227,
+    "stages": {
+     "final": {
+      "file": "onset/src3_final",
+      "LE": 6.503491401672363,
+      "SI-SNRi": 26.776931762695312
+     },
+     "block4": {
+      "file": "onset/src3_block4",
+      "LE": 5.138474941253662,
+      "SI-SNRi": 25.233346939086914
+     },
+     "block2": {
+      "file": "onset/src3_block2",
+      "LE": 7.189970970153809,
+      "SI-SNRi": 21.99382781982422
+     }
+    },
+    "doa": "onset/src3_doa",
+    "doa_int": "onset/src3_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 19.300000208616257,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 34.73041534423828,
+      "SI-SNRi": 19.268478393554688
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 41.132938385009766,
+      "SI-SNRi": 19.215877532958984
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 45.95198440551758,
+      "SI-SNRi": 16.915180206298828
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 9.299999839067459,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 11.427518844604492,
+      "SI-SNRi": 22.456823348999023
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 16.87653350830078,
+      "SI-SNRi": 23.89616584777832
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 4.941704273223877,
+      "SI-SNRi": 25.067424774169922
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 19.60000001192093,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 5.190453052520752,
+      "SI-SNRi": 19.601421356201172
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 6.808552265167236,
+      "SI-SNRi": 8.179367065429688
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 72.10542297363281,
+      "SI-SNRi": -13.198539733886719
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   },
+   "3": {
+    "t_q": 6.300000321865082,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src3_final",
+      "LE": 5.444382190704346,
+      "SI-SNRi": 28.637065887451172
+     },
+     "block4": {
+      "file": "arbitrary/src3_block4",
+      "LE": 5.589019775390625,
+      "SI-SNRi": 26.413257598876953
+     },
+     "block2": {
+      "file": "arbitrary/src3_block2",
+      "LE": 6.761105060577393,
+      "SI-SNRi": 20.724498748779297
+     }
+    },
+    "doa": "arbitrary/src3_doa",
+    "doa_int": "arbitrary/src3_doa_int"
+   }
+  }
+ },
+ "key": "116",
+ "label": "#116",
+ "info": "Measured, 25 s, test mixture 116"
+}

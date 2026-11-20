@@ -1,0 +1,255 @@
+{
+ "dir": "move_twin/sample_73",
+ "sec": 4.0,
+ "sources": [
+  {
+   "name": "Musical instrument",
+   "gt": "src0_gt"
+  },
+  {
+   "name": "Domestic sound",
+   "gt": "src1_gt"
+  },
+  {
+   "name": "Female speech",
+   "gt": "src2_gt"
+  },
+  {
+   "name": "Clapping",
+   "gt": "src3_gt"
+  },
+  {
+   "name": "Female speech",
+   "gt": "src4_gt"
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.3000000111758709,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 7.987824440002441,
+      "SI-SNRi": 10.315560340881348
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 5.538601875305176,
+      "SI-SNRi": 9.127991676330566
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 6.997241020202637,
+      "SI-SNRi": 8.1371488571167
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.9000000044703483,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 4.717487335205078,
+      "SI-SNRi": 25.964468002319336
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 6.146631717681885,
+      "SI-SNRi": 25.75881576538086
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 3.141878604888916,
+      "SI-SNRi": 25.40898895263672
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 5.170228004455566,
+      "SI-SNRi": 13.502202987670898
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 3.0106987953186035,
+      "SI-SNRi": 11.695758819580078
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 8.048215866088867,
+      "SI-SNRi": 10.5068359375
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   },
+   "3": {
+    "t_q": 1.300000038743019,
+    "stages": {
+     "final": {
+      "file": "onset/src3_final",
+      "LE": 2.404607057571411,
+      "SI-SNRi": 25.739402770996094
+     },
+     "block4": {
+      "file": "onset/src3_block4",
+      "LE": 1.3894084692001343,
+      "SI-SNRi": 24.29737663269043
+     },
+     "block2": {
+      "file": "onset/src3_block2",
+      "LE": 1.3091496229171753,
+      "SI-SNRi": 24.78541374206543
+     }
+    },
+    "doa": "onset/src3_doa",
+    "doa_int": "onset/src3_doa_int"
+   },
+   "4": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src4_final",
+      "LE": 1.9821938276290894,
+      "SI-SNRi": 16.54726219177246
+     },
+     "block4": {
+      "file": "onset/src4_block4",
+      "LE": 0.7820386290550232,
+      "SI-SNRi": 15.539931297302246
+     },
+     "block2": {
+      "file": "onset/src4_block2",
+      "LE": 2.660590410232544,
+      "SI-SNRi": 14.1091947555542
+     }
+    },
+    "doa": "onset/src4_doa",
+    "doa_int": "onset/src4_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 2.000000113248825,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 7.839076519012451,
+      "SI-SNRi": 10.299731254577637
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 7.875720977783203,
+      "SI-SNRi": 9.07481861114502
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 16.131629943847656,
+      "SI-SNRi": 8.08879566192627
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.9000000044703483,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 1.8987168073654175,
+      "SI-SNRi": 25.82889747619629
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 4.537529468536377,
+      "SI-SNRi": 25.645322799682617
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 4.729317665100098,
+      "SI-SNRi": 25.331438064575195
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 3.8000000059604644,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 6.030938625335693,
+      "SI-SNRi": 13.59349250793457
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 6.885295867919922,
+      "SI-SNRi": 11.79727554321289
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 6.124216556549072,
+      "SI-SNRi": 9.099102020263672
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   },
+   "3": {
+    "t_q": 1.4000000327825546,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src3_final",
+      "LE": 2.7306060791015625,
+      "SI-SNRi": 26.30428123474121
+     },
+     "block4": {
+      "file": "arbitrary/src3_block4",
+      "LE": 1.3449618816375732,
+      "SI-SNRi": 23.86687660217285
+     },
+     "block2": {
+      "file": "arbitrary/src3_block2",
+      "LE": 2.9836056232452393,
+      "SI-SNRi": 11.86972427368164
+     }
+    },
+    "doa": "arbitrary/src3_doa",
+    "doa_int": "arbitrary/src3_doa_int"
+   },
+   "4": {
+    "t_q": 3.8000000059604644,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src4_final",
+      "LE": 4.282838821411133,
+      "SI-SNRi": 16.656627655029297
+     },
+     "block4": {
+      "file": "arbitrary/src4_block4",
+      "LE": 2.509425401687622,
+      "SI-SNRi": 15.541929244995117
+     },
+     "block2": {
+      "file": "arbitrary/src4_block2",
+      "LE": 3.1831743717193604,
+      "SI-SNRi": 14.307799339294434
+     }
+    },
+    "doa": "arbitrary/src4_doa",
+    "doa_int": "arbitrary/src4_doa_int"
+   }
+  }
+ },
+ "key": "73",
+ "label": "#73",
+ "info": "Simulated twin, test mixture 73"
+}

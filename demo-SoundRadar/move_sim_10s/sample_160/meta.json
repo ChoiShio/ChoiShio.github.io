@@ -1,0 +1,159 @@
+{
+ "dir": "move_sim_10s/sample_160",
+ "sec": 10.0,
+ "sources": [
+  {
+   "name": "Water tap",
+   "gt": "src0_gt"
+  },
+  {
+   "name": "Female speech",
+   "gt": "src1_gt"
+  },
+  {
+   "name": "Musical instrument",
+   "gt": "src2_gt"
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 1.200000035762787,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 18.071134567260742,
+      "SI-SNRi": 29.164207458496094
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 13.373213768005371,
+      "SI-SNRi": 29.224773406982422
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 21.937583923339844,
+      "SI-SNRi": 29.020401000976562
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 3.214451789855957,
+      "SI-SNRi": 26.422101974487305
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 3.6645874977111816,
+      "SI-SNRi": 25.685903549194336
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 4.2264628410339355,
+      "SI-SNRi": 13.61703109741211
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 3.800000014901161,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 3.461622714996338,
+      "SI-SNRi": 30.790613174438477
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 6.850607395172119,
+      "SI-SNRi": 29.816747665405273
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 8.834009170532227,
+      "SI-SNRi": 29.467164993286133
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 3.1999999970197677,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 8.752243041992188,
+      "SI-SNRi": 29.190048217773438
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 17.419422149658203,
+      "SI-SNRi": 29.316320419311523
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 21.301578521728516,
+      "SI-SNRi": 29.10302734375
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 7.100000113248825,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 4.365383148193359,
+      "SI-SNRi": 26.53890037536621
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 4.2983198165893555,
+      "SI-SNRi": 25.869836807250977
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 4.580305099487305,
+      "SI-SNRi": 25.195737838745117
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 4.299999931454659,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 4.945825099945068,
+      "SI-SNRi": 30.75638771057129
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 5.233891010284424,
+      "SI-SNRi": 29.620134353637695
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 7.669530868530273,
+      "SI-SNRi": 29.201509475708008
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   }
+  }
+ },
+ "key": "160",
+ "label": "#160",
+ "info": "Simulated, 10 s, test mixture 160"
+}

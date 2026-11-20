@@ -1,0 +1,183 @@
+{
+ "dir": "starss_sony/fold4_room24_mix006_25s",
+ "sec": 10.0,
+ "sources": [
+  {
+   "name": "Female speech \u00b7 source 3",
+   "gt": null
+  },
+  {
+   "name": "Male speech \u00b7 source 2",
+   "gt": null
+  },
+  {
+   "name": "Laughter \u00b7 source 2",
+   "gt": null
+  },
+  {
+   "name": "Laughter \u00b7 source 3",
+   "gt": null
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 2.5248265266418457
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 2.894148588180542
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 5.445804595947266
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 1.7,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 9.50222396850586
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 9.804218292236328
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 6.4859490394592285
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 5.4,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 10.903154373168945
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 16.96980857849121
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 12.67365550994873
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   },
+   "3": {
+    "t_q": 4.9,
+    "stages": {
+     "final": {
+      "file": "onset/src3_final",
+      "LE": 4.021204471588135
+     },
+     "block4": {
+      "file": "onset/src3_block4",
+      "LE": 2.9695186614990234
+     },
+     "block2": {
+      "file": "onset/src3_block2",
+      "LE": 3.8218212127685547
+     }
+    },
+    "doa": "onset/src3_doa",
+    "doa_int": "onset/src3_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 4.5,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 2.2095303535461426
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 3.853891611099243
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 4.206555366516113
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 8.2,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 10.00402545928955
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 12.20433235168457
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 8.919441223144531
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 6.3,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 7.155670166015625
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 12.319303512573242
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 9.08778190612793
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   },
+   "3": {
+    "t_q": 7.4,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src3_final",
+      "LE": 3.4611847400665283
+     },
+     "block4": {
+      "file": "arbitrary/src3_block4",
+      "LE": 6.09712553024292
+     },
+     "block2": {
+      "file": "arbitrary/src3_block2",
+      "LE": 4.643393039703369
+     }
+    },
+    "doa": "arbitrary/src3_doa",
+    "doa_int": "arbitrary/src3_doa_int"
+   }
+  }
+ },
+ "key": "fold4_room24_mix006_25s",
+ "label": "room24_mix006, 25 s",
+ "info": "dev-test-sony/fold4_room24_mix006, 25-35 s (mean LE 6.7\u00b0)"
+}

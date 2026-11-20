@@ -1,0 +1,255 @@
+{
+ "dir": "move_sim_25s/sample_10",
+ "sec": 25.0,
+ "sources": [
+  {
+   "name": "Water tap",
+   "gt": "src0_gt"
+  },
+  {
+   "name": "Laughter",
+   "gt": "src1_gt"
+  },
+  {
+   "name": "Knock",
+   "gt": "src2_gt"
+  },
+  {
+   "name": "Bell",
+   "gt": "src3_gt"
+  },
+  {
+   "name": "Female speech",
+   "gt": "src4_gt"
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 7.900000262260437,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 3.9188122749328613,
+      "SI-SNRi": 14.528125762939453
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 7.733053684234619,
+      "SI-SNRi": 9.136184692382812
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 8.741801261901855,
+      "SI-SNRi": 8.160664558410645
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 9.699999824166298,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 10.185680389404297,
+      "SI-SNRi": 13.65727710723877
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 6.563137531280518,
+      "SI-SNRi": 11.904170036315918
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 7.124936580657959,
+      "SI-SNRi": 23.485454559326172
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 10.30000017285347,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 3.548964738845825,
+      "SI-SNRi": 28.33096694946289
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 4.946486949920654,
+      "SI-SNRi": 27.428905487060547
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 7.208191871643066,
+      "SI-SNRi": 27.007545471191406
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   },
+   "3": {
+    "t_q": 13.299999690055847,
+    "stages": {
+     "final": {
+      "file": "onset/src3_final",
+      "LE": 3.519235610961914,
+      "SI-SNRi": 12.802308082580566
+     },
+     "block4": {
+      "file": "onset/src3_block4",
+      "LE": 6.639316558837891,
+      "SI-SNRi": 11.274011611938477
+     },
+     "block2": {
+      "file": "onset/src3_block2",
+      "LE": 7.1180739402771,
+      "SI-SNRi": 9.764518737792969
+     }
+    },
+    "doa": "onset/src3_doa",
+    "doa_int": "onset/src3_doa_int"
+   },
+   "4": {
+    "t_q": 7.999999701976776,
+    "stages": {
+     "final": {
+      "file": "onset/src4_final",
+      "LE": 2.731231212615967,
+      "SI-SNRi": 12.013741493225098
+     },
+     "block4": {
+      "file": "onset/src4_block4",
+      "LE": 3.008671998977661,
+      "SI-SNRi": 10.867006301879883
+     },
+     "block2": {
+      "file": "onset/src4_block2",
+      "LE": 4.650126934051514,
+      "SI-SNRi": 9.353448867797852
+     }
+    },
+    "doa": "onset/src4_doa",
+    "doa_int": "onset/src4_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 15.399999797344208,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 4.9710259437561035,
+      "SI-SNRi": 15.516133308410645
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 3.3838415145874023,
+      "SI-SNRi": 12.201079368591309
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 7.572707176208496,
+      "SI-SNRi": 9.237717628479004
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 9.699999824166298,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 10.273029327392578,
+      "SI-SNRi": 21.99027442932129
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 9.064563751220703,
+      "SI-SNRi": 19.33550262451172
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 8.502387046813965,
+      "SI-SNRi": 24.452661514282227
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 10.899999779462814,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 4.095876216888428,
+      "SI-SNRi": 28.26291275024414
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 8.036737442016602,
+      "SI-SNRi": 27.3966064453125
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 11.508086204528809,
+      "SI-SNRi": 27.237083435058594
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   },
+   "3": {
+    "t_q": 19.399999648332596,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src3_final",
+      "LE": 5.432698726654053,
+      "SI-SNRi": 12.835362434387207
+     },
+     "block4": {
+      "file": "arbitrary/src3_block4",
+      "LE": 6.643966197967529,
+      "SI-SNRi": 11.231266021728516
+     },
+     "block2": {
+      "file": "arbitrary/src3_block2",
+      "LE": 5.757236480712891,
+      "SI-SNRi": 6.404087066650391
+     }
+    },
+    "doa": "arbitrary/src3_doa",
+    "doa_int": "arbitrary/src3_doa_int"
+   },
+   "4": {
+    "t_q": 17.200000101327895,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src4_final",
+      "LE": 3.010845184326172,
+      "SI-SNRi": 12.193643569946289
+     },
+     "block4": {
+      "file": "arbitrary/src4_block4",
+      "LE": 3.0915865898132324,
+      "SI-SNRi": 10.993608474731445
+     },
+     "block2": {
+      "file": "arbitrary/src4_block2",
+      "LE": 4.067575931549072,
+      "SI-SNRi": 9.400761604309082
+     }
+    },
+    "doa": "arbitrary/src4_doa",
+    "doa_int": "arbitrary/src4_doa_int"
+   }
+  }
+ },
+ "key": "10",
+ "label": "#10",
+ "info": "Simulated, 25 s, test mixture 10"
+}

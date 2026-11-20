@@ -1,0 +1,207 @@
+{
+ "dir": "move_sim_10s/sample_141",
+ "sec": 10.0,
+ "sources": [
+  {
+   "name": "Telephone",
+   "gt": "src0_gt"
+  },
+  {
+   "name": "Male speech",
+   "gt": "src1_gt"
+  },
+  {
+   "name": "Walk and footsteps",
+   "gt": "src2_gt"
+  },
+  {
+   "name": "Telephone",
+   "gt": "src3_gt"
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.9999999806284905,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 4.402878284454346,
+      "SI-SNRi": 17.89739990234375
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 8.219636917114258,
+      "SI-SNRi": 15.759366989135742
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 10.88643741607666,
+      "SI-SNRi": 12.334372520446777
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.9999999806284905,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 4.632086277008057,
+      "SI-SNRi": 19.708641052246094
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 5.638260364532471,
+      "SI-SNRi": 17.095653533935547
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 6.935866355895996,
+      "SI-SNRi": 9.049015045166016
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 1.699999952316284,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 9.49112319946289,
+      "SI-SNRi": 25.192949295043945
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 10.404586791992188,
+      "SI-SNRi": 24.301618576049805
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 11.654233932495117,
+      "SI-SNRi": 24.147397994995117
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   },
+   "3": {
+    "t_q": 0.9000000268220901,
+    "stages": {
+     "final": {
+      "file": "onset/src3_final",
+      "LE": 7.0070672035217285,
+      "SI-SNRi": 21.20384979248047
+     },
+     "block4": {
+      "file": "onset/src3_block4",
+      "LE": 4.774545192718506,
+      "SI-SNRi": 20.751052856445312
+     },
+     "block2": {
+      "file": "onset/src3_block2",
+      "LE": 4.879784107208252,
+      "SI-SNRi": 20.44268798828125
+     }
+    },
+    "doa": "onset/src3_doa",
+    "doa_int": "onset/src3_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 7.39999982714653,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 3.5229310989379883,
+      "SI-SNRi": 18.241357803344727
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 4.236489295959473,
+      "SI-SNRi": 11.283066749572754
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 10.653473854064941,
+      "SI-SNRi": 4.053711891174316
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 1.2999999895691872,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 6.1061692237854,
+      "SI-SNRi": 19.60304832458496
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 6.5650763511657715,
+      "SI-SNRi": 16.85811996459961
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 6.763010501861572,
+      "SI-SNRi": 8.434432029724121
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 6.69999970793724,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 4.159452438354492,
+      "SI-SNRi": 25.082191467285156
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 4.384145259857178,
+      "SI-SNRi": 24.25643539428711
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 23.456756591796875,
+      "SI-SNRi": 14.163155555725098
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   },
+   "3": {
+    "t_q": 2.2999999701976774,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src3_final",
+      "LE": 6.659281253814697,
+      "SI-SNRi": 21.228160858154297
+     },
+     "block4": {
+      "file": "arbitrary/src3_block4",
+      "LE": 5.0715532302856445,
+      "SI-SNRi": 20.829063415527344
+     },
+     "block2": {
+      "file": "arbitrary/src3_block2",
+      "LE": 5.165311813354492,
+      "SI-SNRi": 20.590145111083984
+     }
+    },
+    "doa": "arbitrary/src3_doa",
+    "doa_int": "arbitrary/src3_doa_int"
+   }
+  }
+ },
+ "key": "141",
+ "label": "#141",
+ "info": "Simulated, 10 s, test mixture 141"
+}

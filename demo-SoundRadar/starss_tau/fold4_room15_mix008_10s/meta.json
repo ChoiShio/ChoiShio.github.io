@@ -1,0 +1,141 @@
+{
+ "dir": "starss_tau/fold4_room15_mix008_10s",
+ "sec": 10.0,
+ "sources": [
+  {
+   "name": "Female speech \u00b7 source 2",
+   "gt": null
+  },
+  {
+   "name": "Female speech \u00b7 source 4",
+   "gt": null
+  },
+  {
+   "name": "Musical instrument \u00b7 source 4",
+   "gt": null
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 9.430166244506836
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 9.96265983581543
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 6.180487632751465
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 1.0,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 3.7603607177734375
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 3.2058191299438477
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 3.932516098022461
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 4.2,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 9.562798500061035
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 9.69717788696289
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 6.129918575286865
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 7.6,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 12.26215648651123
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 11.15339183807373
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 8.864800453186035
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 3.5,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 4.946310997009277
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 3.9691646099090576
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 2.9132022857666016
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 7.1,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 6.439459323883057
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 4.699411869049072
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 2.820288896560669
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   }
+  }
+ },
+ "key": "fold4_room15_mix008_10s",
+ "label": "room15_mix008, 10 s",
+ "info": "dev-test-tau/fold4_room15_mix008, 10-20 s (mean LE 7.6\u00b0)"
+}

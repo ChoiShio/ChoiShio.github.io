@@ -1,0 +1,255 @@
+{
+ "dir": "move_real/sample_1654",
+ "sec": 4.0,
+ "sources": [
+  {
+   "name": "Bell",
+   "gt": "src0_gt"
+  },
+  {
+   "name": "Knock",
+   "gt": "src1_gt"
+  },
+  {
+   "name": "Female speech",
+   "gt": "src2_gt"
+  },
+  {
+   "name": "Knock",
+   "gt": "src3_gt"
+  },
+  {
+   "name": "Door",
+   "gt": "src4_gt"
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 10.42507553100586,
+      "SI-SNRi": 43.7305793762207
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 9.562976837158203,
+      "SI-SNRi": 42.67162322998047
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 12.491498947143555,
+      "SI-SNRi": 41.06194305419922
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 5.480444431304932,
+      "SI-SNRi": 22.1732120513916
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 10.292150497436523,
+      "SI-SNRi": 21.5843563079834
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 6.917590141296387,
+      "SI-SNRi": 19.77718734741211
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 4.332023620605469,
+      "SI-SNRi": 10.331589698791504
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 5.936710834503174,
+      "SI-SNRi": 9.90733528137207
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 12.28140640258789,
+      "SI-SNRi": 6.040188312530518
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   },
+   "3": {
+    "t_q": 0.6000000223517418,
+    "stages": {
+     "final": {
+      "file": "onset/src3_final",
+      "LE": 6.841152191162109,
+      "SI-SNRi": 16.364490509033203
+     },
+     "block4": {
+      "file": "onset/src3_block4",
+      "LE": 5.503838062286377,
+      "SI-SNRi": 15.282857894897461
+     },
+     "block2": {
+      "file": "onset/src3_block2",
+      "LE": 6.882960796356201,
+      "SI-SNRi": 13.29343032836914
+     }
+    },
+    "doa": "onset/src3_doa",
+    "doa_int": "onset/src3_doa_int"
+   },
+   "4": {
+    "t_q": 0.2000000026077032,
+    "stages": {
+     "final": {
+      "file": "onset/src4_final",
+      "LE": 11.01512622833252,
+      "SI-SNRi": 18.67554473876953
+     },
+     "block4": {
+      "file": "onset/src4_block4",
+      "LE": 6.5088114738464355,
+      "SI-SNRi": 18.026508331298828
+     },
+     "block2": {
+      "file": "onset/src4_block2",
+      "LE": 10.717605590820312,
+      "SI-SNRi": 16.25808334350586
+     }
+    },
+    "doa": "onset/src4_doa",
+    "doa_int": "onset/src4_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 0.7000000163912773,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 7.365890979766846,
+      "SI-SNRi": 43.9991455078125
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 10.39872932434082,
+      "SI-SNRi": 42.98942184448242
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 12.127656936645508,
+      "SI-SNRi": 42.75379943847656
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 7.761660575866699,
+      "SI-SNRi": 22.22418975830078
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 12.127031326293945,
+      "SI-SNRi": 21.604644775390625
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 5.998813152313232,
+      "SI-SNRi": 16.7465877532959
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 0.5000000283122062,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 4.0978240966796875,
+      "SI-SNRi": 10.605408668518066
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 4.893181324005127,
+      "SI-SNRi": 10.197965621948242
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 4.738773822784424,
+      "SI-SNRi": 8.41269302368164
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   },
+   "3": {
+    "t_q": 1.300000038743019,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src3_final",
+      "LE": 5.412250995635986,
+      "SI-SNRi": 16.070053100585938
+     },
+     "block4": {
+      "file": "arbitrary/src3_block4",
+      "LE": 6.85428524017334,
+      "SI-SNRi": 15.364421844482422
+     },
+     "block2": {
+      "file": "arbitrary/src3_block2",
+      "LE": 6.1306538581848145,
+      "SI-SNRi": 12.842358589172363
+     }
+    },
+    "doa": "arbitrary/src3_doa",
+    "doa_int": "arbitrary/src3_doa_int"
+   },
+   "4": {
+    "t_q": 3.2000000417232513,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src4_final",
+      "LE": 11.324440956115723,
+      "SI-SNRi": 18.82679557800293
+     },
+     "block4": {
+      "file": "arbitrary/src4_block4",
+      "LE": 7.769145965576172,
+      "SI-SNRi": 17.41337013244629
+     },
+     "block2": {
+      "file": "arbitrary/src4_block2",
+      "LE": 10.742942810058594,
+      "SI-SNRi": 16.22167205810547
+     }
+    },
+    "doa": "arbitrary/src4_doa",
+    "doa_int": "arbitrary/src4_doa_int"
+   }
+  }
+ },
+ "key": "1654",
+ "label": "#1654",
+ "info": "Measured twin, test mixture 1654"
+}

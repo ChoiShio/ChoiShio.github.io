@@ -1,0 +1,141 @@
+{
+ "dir": "starss_tau/fold4_room16_mix003_15s",
+ "sec": 10.0,
+ "sources": [
+  {
+   "name": "Female speech \u00b7 source 3",
+   "gt": null
+  },
+  {
+   "name": "Male speech \u00b7 source 2",
+   "gt": null
+  },
+  {
+   "name": "Water tap \u00b7 source 4",
+   "gt": null
+  }
+ ],
+ "queries": {
+  "onset": {
+   "0": {
+    "t_q": 1.3,
+    "stages": {
+     "final": {
+      "file": "onset/src0_final",
+      "LE": 15.014571189880371
+     },
+     "block4": {
+      "file": "onset/src0_block4",
+      "LE": 13.096991539001465
+     },
+     "block2": {
+      "file": "onset/src0_block2",
+      "LE": 14.102431297302246
+     }
+    },
+    "doa": "onset/src0_doa",
+    "doa_int": "onset/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src1_final",
+      "LE": 3.8907411098480225
+     },
+     "block4": {
+      "file": "onset/src1_block4",
+      "LE": 5.2924041748046875
+     },
+     "block2": {
+      "file": "onset/src1_block2",
+      "LE": 4.398133277893066
+     }
+    },
+    "doa": "onset/src1_doa",
+    "doa_int": "onset/src1_doa_int"
+   },
+   "2": {
+    "t_q": 0.0,
+    "stages": {
+     "final": {
+      "file": "onset/src2_final",
+      "LE": 8.991436958312988
+     },
+     "block4": {
+      "file": "onset/src2_block4",
+      "LE": 11.13131046295166
+     },
+     "block2": {
+      "file": "onset/src2_block2",
+      "LE": 11.576160430908203
+     }
+    },
+    "doa": "onset/src2_doa",
+    "doa_int": "onset/src2_doa_int"
+   }
+  },
+  "arbitrary": {
+   "0": {
+    "t_q": 5.6,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src0_final",
+      "LE": 15.038329124450684
+     },
+     "block4": {
+      "file": "arbitrary/src0_block4",
+      "LE": 14.188161849975586
+     },
+     "block2": {
+      "file": "arbitrary/src0_block2",
+      "LE": 13.452319145202637
+     }
+    },
+    "doa": "arbitrary/src0_doa",
+    "doa_int": "arbitrary/src0_doa_int"
+   },
+   "1": {
+    "t_q": 0.7,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src1_final",
+      "LE": 4.3798723220825195
+     },
+     "block4": {
+      "file": "arbitrary/src1_block4",
+      "LE": 3.5380969047546387
+     },
+     "block2": {
+      "file": "arbitrary/src1_block2",
+      "LE": 5.420543193817139
+     }
+    },
+    "doa": "arbitrary/src1_doa",
+    "doa_int": "arbitrary/src1_doa_int"
+   },
+   "2": {
+    "t_q": 2.8,
+    "stages": {
+     "final": {
+      "file": "arbitrary/src2_final",
+      "LE": 10.969125747680664
+     },
+     "block4": {
+      "file": "arbitrary/src2_block4",
+      "LE": 21.253400802612305
+     },
+     "block2": {
+      "file": "arbitrary/src2_block2",
+      "LE": 18.67352867126465
+     }
+    },
+    "doa": "arbitrary/src2_doa",
+    "doa_int": "arbitrary/src2_doa_int"
+   }
+  }
+ },
+ "key": "fold4_room16_mix003_15s",
+ "label": "room16_mix003, 15 s",
+ "info": "dev-test-tau/fold4_room16_mix003, 15-25 s (mean LE 9.3\u00b0)"
+}
